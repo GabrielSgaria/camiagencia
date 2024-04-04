@@ -15,8 +15,8 @@ export function NavBar() {
                         />
                     </div>
                     <div className="sm:flex gap-6 hidden ">
-                        <button className="h-full text-zinc-400 hover:text-zinc-50  hover:bg-red-600 font-sans text-sm uppercase">O QUE FAZEMOS?</button>
-                        <button className="h-full text-zinc-400 hover:text-zinc-50 hover:bg-red-600 font-sans text-sm uppercase">BENEFÍCIOS</button>
+                        <button className="h-full transition-all duration-200 text-cinzaCami hover:text-zinc-50  hover:bg-marromCami font-sans text-sm uppercase px-2">O QUE FAZEMOS?</button>
+                        <button className="h-full transition-all duration-200 text-cinzaCami hover:text-zinc-50 hover:bg-marromCami font-sans text-sm uppercase px-2">BENEFÍCIOS</button>
                     </div>
 
 

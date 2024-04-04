@@ -8,8 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
-
-    },
+      colors: {
+        'marromCami': '#a86344',
+        'cinzaCami': '#575757',
+        'pretoCami': '#0c0a09',
+      },
+    }
   },
   plugins: [],
 };

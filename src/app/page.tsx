@@ -1,14 +1,16 @@
 'use client'
 import { NavBar } from "@/components/nav-bar";
 import Image from "next/image";
+import methodIcons from '../../public/image/icons.png'
 import logoECami from '../../public/image/logoECami.png'
 import { useWindowSize } from "react-use";
 import { motion } from 'framer-motion';
-import { CardPassos } from "@/components/cardPassos";
+import { CardPassos } from "@/components/card-steps";
 import { texts } from "@/lib/textosCardsPassos";
-import { ArrowRightIcon, ResetIcon } from "@radix-ui/react-icons";
+import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { ArrowUDownLeft } from "@phosphor-icons/react";
-
+import { CardPlansDesktop, } from "@/components/card-plans-desktop";
+import { CardPlansMobile } from "@/components/card-plans-mobile";
 
 export default function Home() {
   const windowSize = useWindowSize();
@@ -29,8 +31,8 @@ export default function Home() {
         </div>
         <div className="relative w-full top-32 sm:top-0 sm:right-0 flex justify-end items-center">
           <motion.div
-            initial={{ opacity: 0, x: 200, scale: 0.7 }}
-            whileInView={{ opacity: 1, x: 0, scale: 1 }}
+            initial={{ opacity: 0, y: -200, scale: 0.7 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.2 }}
             className="absolute">
             <Image
@@ -54,52 +56,78 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
-      <section className="bg-zinc-100 py-16">
+      <section className="py-16">
         <div className="container mx-auto flex flex-col text-zinc-50 justify-center items-center gap-8">
 
           <div className="flex flex-col gap-3 items-center">
-            <div className="flex flex-col text-2xl text-pretoCami items-center mb-6">
+            <div className="flex flex-col text-2xl text-pretoCami items-center mb-2">
               <h3>Utilizamos uma metodologia de 7 passos</h3>
               <h3>clara e objetiva, onde o cliente participa de todo o processo</h3>
             </div>
-            <div className="mb-8">
+            <div className="mb-2">
               <p className="text-cinzaCami text-xl">A criação de marca é uma via de mão dupla</p>
             </div>
             <div>
               <p className="text-cinzaCami text-2xl">Método Cami</p>
             </div>
+            <div className="w-8/12">
+              <Image
+                width={900}
+                height={900}
+                alt="Logo Cami Agência Criativa"
+                src={methodIcons}
+              />
+            </div>
           </div>
 
-          <div className="grid grid-flow-row grid-cols-3 gap-4 gap-y-16 ">
+
+          <div className="grid grid-flow-row grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 gap-y-16 bg-gradient-to-b from-zinc-50 to-zinc-100 p-8 rounded-2xl shadow-xl">
+
             {texts.map((texts, index) => (
               <div key={index} className={`flex flex-row items-center gap-4 `}>
                 <CardPassos
                   tituloCardPassos={texts.title}
                   textoCardPassos={texts.text}
                 />
-                {index == 2 || index === 5 ? (
-                  <ArrowUDownLeft className="reverse size-8 text-zinc-950 " />) :
-                  <ArrowRightIcon className={`${index == 2 || index == 5 ? 'hidden' : 'size-8 text-zinc-950 '} `} />}
+                {/* {index == 2 || index === 5 ? (
+                  <ArrowUDownLeft className="reverse size-8 text-cinzaCami " />) :
+                  <ArrowRightIcon className={`${index == 2 || index == 5 ? 'hidden' : 'size-8 text-cinzaCami '} `} />} */}
 
               </div>
             ))}
-            <div className="text-pretoCami w-[720px] h-full rounded-3xl py-3 px-5 border border-zinc-300 shadow-xl">
-              <h1 className="font-bold text-red-600 text-2xl mb-2">
-                Cami, e se eu não gostar?
-              </h1>
-              <p className="w-full h-full">
-                Como nosso maior objetivo é que você ame e se identifique com o seu projeto,
-                disponibilizamos até 3 alterações no seu projeto. Então pode ficar tranquila que vamos
-                chegar há um resultado que te represente!
-              </p>
-            </div>
+
           </div>
+          <div className="mt-10 text-pretoCami w-full sm:w-[500px] h-full rounded-3xl py-3 px-5 border bg-gradient-to-b from-zinc-50 to-zinc-100 border-zinc-300 shadow-xl">
+            <h1 className="font-bold text-red-600 text-2xl mb-2">
+              Cami, e se eu não gostar?
+            </h1>
+            <p className="w-full h-full">
+              Como nosso maior objetivo é que você ame e se identifique com o seu projeto,
+              disponibilizamos até 3 alterações no seu projeto. Então pode ficar tranquila que vamos
+              chegar há um resultado que te represente!
+            </p>
+          </div>
+
 
         </div>
       </section>
-      <section>
+      <div>
+        {windowSize.width <= 768 ? <CardPlansMobile /> : <CardPlansDesktop />}
+      </div>
 
-      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
     </div>
   );
 }

@@ -7,8 +7,8 @@ export function NavBar() {
             <nav className="sm:flex mx-auto container h-20">
                 <div className="flex flex-row justify-center sm:justify-between w-full">
                     <motion.div
-                        initial={{ opacity: 0, x: -200, scale: 0.7 }}
-                        whileInView={{ opacity: 1, x: 0, scale: 1 }}
+                        initial={{ opacity: 0, y: -30, scale: 0.7 }}
+                        whileInView={{ opacity: 1, y: 0, scale: 1 }}
                         transition={{ duration: 0.2 }}
                         className="w-40 flex my-4">
                         <Image

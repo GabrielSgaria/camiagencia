@@ -11,9 +11,25 @@ import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { ArrowUDownLeft } from "@phosphor-icons/react";
 import { CardPlansDesktop, } from "@/components/card-plans-desktop";
 import { CardPlansMobile } from "@/components/card-plans-mobile";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const windowSize = useWindowSize();
+  const [windowSized, setWindowSized] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight
+  });
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowSized({
+        width: window.innerWidth,
+        height: window.innerHeight
+      });
+    }
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   return (
     <div className="h-screen bg-zinc-50">

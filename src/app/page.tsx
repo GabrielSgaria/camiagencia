@@ -15,20 +15,28 @@ import { useEffect, useState } from "react";
 
 export default function Home() {
   const windowSize = useWindowSize();
+  const [isClient, setIsClient] = useState(false);
   const [windowSized, setWindowSized] = useState({
-    width: window.innerWidth,
-    height: window.innerHeight
+    width: 0,
+    height: 0
   });
 
   useEffect(() => {
+    setIsClient(true);
+
     function handleResize() {
       setWindowSized({
         width: window.innerWidth,
         height: window.innerHeight
       });
     }
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+
+    if (typeof window !== 'undefined') {
+      // Adicionando event listener apenas se window estiver definido (no navegador)
+      handleResize();
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }
   }, []);
 
   return (
@@ -128,21 +136,8 @@ export default function Home() {
         </div>
       </section>
       <div>
-        {windowSize.width <= 768 ? <CardPlansMobile /> : <CardPlansDesktop />}
+        {isClient && (windowSize.width <= 768 ? <CardPlansMobile /> : <CardPlansDesktop />)}
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     </div>
   );

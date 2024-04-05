@@ -25,6 +25,6 @@ export const texts = [
     },
     {
         title: "Entrega",
-        text: "É nesse momento que você recebe e pode começar a usar!",
+        text: "É nesse momento que você recebe e pode começar a usar.",
     },
 ]

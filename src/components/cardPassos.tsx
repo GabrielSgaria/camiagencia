@@ -6,7 +6,7 @@ interface CardPassosProps {
 
 export function CardPassos({ tituloCardPassos, textoCardPassos }: CardPassosProps) {
     return (
-        <div className="text-pretoCami w-full h-full rounded-3xl p-3 border border-zinc-300">
+        <div className="text-pretoCami w-full h-full rounded-3xl py-3 px-5 border border-zinc-300 shadow-xl">
             <h1 className="font-bold text-marromCami text-xl mb-2">
                 {tituloCardPassos}
             </h1>

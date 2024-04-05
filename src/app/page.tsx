@@ -6,6 +6,9 @@ import { useWindowSize } from "react-use";
 import { motion } from 'framer-motion';
 import { CardPassos } from "@/components/cardPassos";
 import { texts } from "@/lib/textosCardsPassos";
+import { ArrowRightIcon, ResetIcon } from "@radix-ui/react-icons";
+import { ArrowUDownLeft } from "@phosphor-icons/react";
+
 
 export default function Home() {
   const windowSize = useWindowSize();
@@ -51,7 +54,7 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
-      <section className="bg-zinc-100 py-16 h-screen">
+      <section className="bg-zinc-100 py-16">
         <div className="container mx-auto flex flex-col text-zinc-50 justify-center items-center gap-8">
 
           <div className="flex flex-col gap-3 items-center">
@@ -69,15 +72,33 @@ export default function Home() {
 
           <div className="grid grid-flow-row grid-cols-3 gap-4 gap-y-16 ">
             {texts.map((texts, index) => (
-              <CardPassos key={index}
-                tituloCardPassos={texts.title}
-                textoCardPassos={texts.text}
-              />
-            ))}
+              <div key={index} className={`flex flex-row items-center gap-4 `}>
+                <CardPassos
+                  tituloCardPassos={texts.title}
+                  textoCardPassos={texts.text}
+                />
+                {index == 2 || index === 5 ? (
+                  <ArrowUDownLeft className="reverse size-8 text-zinc-950 " />) :
+                  <ArrowRightIcon className={`${index == 2 || index == 5 ? 'hidden' : 'size-8 text-zinc-950 '} `} />}
 
+              </div>
+            ))}
+            <div className="text-pretoCami w-[720px] h-full rounded-3xl py-3 px-5 border border-zinc-300 shadow-xl">
+              <h1 className="font-bold text-red-600 text-2xl mb-2">
+                Cami, e se eu não gostar?
+              </h1>
+              <p className="w-full h-full">
+                Como nosso maior objetivo é que você ame e se identifique com o seu projeto,
+                disponibilizamos até 3 alterações no seu projeto. Então pode ficar tranquila que vamos
+                chegar há um resultado que te represente!
+              </p>
+            </div>
           </div>
 
         </div>
+      </section>
+      <section>
+
       </section>
     </div>
   );

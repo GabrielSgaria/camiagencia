@@ -4,7 +4,7 @@ import { BookBookmark, Rocket } from "@phosphor-icons/react/dist/ssr";
 
 export function CardPlansMobile() {
     return (
-        <section className="py-16 ">
+        <section className="pt-16">
             <div className="mx-auto container flex">
                 <div className="w-full px-3 rounded-2xl flex flex-col-reverse justify-between gap-10 border border-zinc-300 py-7 shadow-xl bg-gradient-to-b to-zinc-50 from-zinc-100">
 

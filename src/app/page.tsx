@@ -4,14 +4,12 @@ import Image from "next/image";
 import methodIcons from '../../public/image/icons.png'
 import logoECami from '../../public/image/logoECami.png'
 import { useWindowSize } from "react-use";
-import { motion } from 'framer-motion';
 import { CardPassos } from "@/components/card-steps";
 import { texts } from "@/lib/textosCardsPassos";
-import { ArrowRightIcon } from "@radix-ui/react-icons";
-import { ArrowUDownLeft } from "@phosphor-icons/react";
 import { CardPlansDesktop, } from "@/components/card-plans-desktop";
 import { CardPlansMobile } from "@/components/card-plans-mobile";
 import { useEffect, useState } from "react";
+import { CheckIcon, Cross2Icon, DotFilledIcon } from "@radix-ui/react-icons";
 
 export default function Home() {
   const windowSize = useWindowSize();
@@ -44,13 +42,15 @@ export default function Home() {
       <section className="mx-auto container flex flex-col-reverse sm:flex-row justify-between items-center h-[600px] sm:h-[500px] sm:px-10 sm:gap-2">
         <div className={`sm:h-full w-full items-center sm:items-start justify-center flex flex-col`}>
           <span className="text-lg text-center sm:text-start sm:text-xl text-cinzaCami sm:max-w-[400px] w-full font-normal">Procurando uma Identidade Visual?</span>
-          <h2 className="sm:text-4xl text-3xl text-pretoCami sm:w-[500px] font-bold flex flex-col gap-1 items-center sm:items-start">
+          <h2 className="sm:text-4xl text-2xl text-pretoCami sm:w-[500px] font-bold flex flex-col gap-1 items-center sm:items-start">
             <span className="justify-center sm:justify-start flex w-full">Tenha uma marca</span>
             <span className="justify-center sm:justify-start flex w-full">única e exclusiva</span>
             <span className="justify-center sm:justify-start flex w-full">desenhada a mão livre</span>
             <span className="justify-center sm:justify-start flex w-full">e que conte a sua história</span>
           </h2>
-          <button className="mb-10 sm:mb-0 mt-10 w-full sm:w-10/12 rounded-full py-4 shadow-xl bg-green-500 text-zinc-50 hover:bg-marromCami hover:text-pretoCami transition-all duration-500 text-lg font-bold">QUERO MAIS INFORMAÇÕES</button>
+          <button className="mb-20 sm:mb-0 mt-10 w-full sm:w-10/12 rounded-full py-4 shadow-xl bg-green-500 text-zinc-50 hover:bg-marromCami hover:text-pretoCami transition-all duration-500 text-lg font-bold">
+            QUERO MAIS INFORMAÇÕES
+          </button>
         </div>
         <div className="relative w-full top-32 sm:top-0 sm:right-0 flex justify-end items-center">
           <div
@@ -81,7 +81,7 @@ export default function Home() {
         <div className="container mx-auto flex flex-col text-zinc-50 justify-center items-center gap-8">
 
           <div className="flex flex-col gap-3 items-center">
-            <div className="flex flex-col sm:text-2xl text-xl text-pretoCami items-center mb-2">
+            <div className="flex flex-col sm:text-2xl text-lg text-pretoCami items-center mb-2">
               <h3 className="w-full text-center">Utilizamos uma metodologia de 7 passos</h3>
               <h3 className="w-full text-center">clara e objetiva, onde o cliente participa de todo o processo</h3>
             </div>
@@ -89,9 +89,9 @@ export default function Home() {
               <p className="text-cinzaCami text-lg w-full text-center">A criação de marca é uma via de mão dupla</p>
             </div>
             <div>
-              <p className="text-cinzaCami text-xl sm:text-2xl">Método Cami</p>
+              <p className="text-cinzaCami text-lg sm:text-2xl">Método Cami</p>
             </div>
-            <div className="w-8/12">
+            <div className="w-full sm:w-8/12">
               <Image
                 width={900}
                 height={900}
@@ -102,7 +102,7 @@ export default function Home() {
           </div>
 
 
-          <div className="grid grid-flow-row grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 gap-y-5 bg-gradient-to-b from-zinc-50 to-zinc-100 py-8 px-2 rounded-2xl shadow-xl">
+          <div className="grid grid-flow-row grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 gap-y-5 bg-gradient-to-b from-zinc-50 to-zinc-100 py-8 px-1 rounded-2xl shadow-xl">
 
             {texts.map((texts, index) => (
               <div key={index} className={`flex flex-row items-center gap-4 `}>
@@ -119,7 +119,7 @@ export default function Home() {
 
           </div>
           <div className="mt-10 text-pretoCami w-full sm:w-[500px] h-full rounded-3xl py-3 px-5 border bg-gradient-to-b from-zinc-50 to-zinc-100 border-zinc-300 shadow-xl">
-            <h1 className="font-bold text-red-600 text-2xl mb-2">
+            <h1 className="font-bold text-red-600 text-2xl mb-2 text-center sm:text-start ">
               Cami, e se eu não gostar?
             </h1>
             <p className="w-full h-full">
@@ -132,9 +132,140 @@ export default function Home() {
 
         </div>
       </section>
-      <div>
-        {isClient && (windowSize.width <= 768 ? <CardPlansMobile /> : <CardPlansDesktop />)}
-      </div>
+
+      {isClient && (windowSize.width <= 768 ? <CardPlansMobile /> : <CardPlansDesktop />)}
+
+      <section className="container mx-auto flex mt-10 sm:mt-0">
+        <div className="w-full h-full px-3 rounded-2xl flex flex-col border border-zinc-300 shadow-xl bg-gradient-to-b to-zinc-50 from-zinc-100">
+          <div className="flex flex-col">
+            <div className="flex flex-row items-center h-[80px] ">
+              <div className="w-[50%] sm:w-[80%] flex items-center text-lg font-bold">
+                 Compare Você mesmo
+              </div>
+              <div className="w-[20%] sm:w-[10%] h-full flex justify-center items-center bg-zinc-200 text-zinc-500 text-center sm:py-1">
+                <p>Pretador de <br /> serviço</p>
+              </div>
+              <div className="w-[20%] sm:w-[10%] h-full flex justify-center items-center bg-zinc-500 text-zinc-50 text-center sm:py-1">
+                <p>Outras<br /> agências</p>
+              </div>
+              <div className="w-[20%] sm:w-[10%] h-full flex justify-center items-center bg-zinc-100 text-zinc-950 text-center py-1">
+                <p>Cami<br /> agência</p>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col w-full">
+            <div className="flex flex-row items-center h-[80px] ">
+              <div className="w-[60%] sm:w-[80%] flex items-center text-base sm:text-lg ">
+                <DotFilledIcon className="text-red-600 mr-2 size-3" /> Atendimento durante todo o preocesso de criação
+              </div>
+              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-200">
+                <CheckIcon className="size-8 text-lime-500" />
+              </div>
+              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-500">
+                <CheckIcon className="size-8 text-lime-500" />
+              </div>
+              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-100">
+                <CheckIcon className="size-8 text-lime-500" />
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col w-full">
+            <div className="flex flex-row items-center">
+              <div className="w-[60%] sm:w-[80%] flex items-center text-lg">
+                <DotFilledIcon className="text-red-600 mr-2 size-3" /> Equipe criativa
+              </div>
+              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-200">
+                <Cross2Icon className="size-8 text-red-600" />
+              </div>
+              <div className="w-[14%] sm:w-[10%] h-[32px] flex justify-center items-center bg-zinc-500">
+                <p className="font-bold text-zinc-300 items-center text-base">ás vezes</p>
+              </div>
+              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-100">
+                <CheckIcon className="size-8 text-lime-500" />
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col w-full">
+            <div className="flex flex-row items-center">
+              <div className="w-[60%] sm:w-[80%] flex items-center text-lg">
+                <DotFilledIcon className="text-red-600 mr-2 size-3" /> Reunião ilimitada com especialistas
+              </div>
+              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-200">
+                <Cross2Icon className="size-8 text-red-600" />
+              </div>
+              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-500">
+                <Cross2Icon className="size-8 text-red-600" />
+              </div>
+              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-100">
+                <CheckIcon className="size-8 text-lime-500" />
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col w-full">
+            <div className="flex flex-row items-center">
+              <div className="w-[60%] sm:w-[80%]  flex items-center text-lg">
+                <DotFilledIcon className="text-red-600 mr-2 size-3" /> Desenhos feitos a mão livre
+              </div>
+              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-200">
+                <Cross2Icon className="size-8 text-red-600" />
+              </div>
+              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-500">
+                <Cross2Icon className="size-8 text-red-600" />
+              </div>
+              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-100">
+                <CheckIcon className="size-8 text-lime-500" />
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col w-full">
+            <div className="flex flex-row items-center">
+              <div className="w-[60%] sm:w-[80%]  flex items-center text-lg">
+                <DotFilledIcon className="text-red-600 mr-2 size-3" /> Especialistas em criação de marca profissionais da saúde
+              </div>
+              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-200">
+                <Cross2Icon className="size-8 text-red-600" />
+              </div>
+              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-500">
+                <Cross2Icon className="size-8 text-red-600" />
+              </div>
+              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-100">
+                <CheckIcon className="size-8 text-lime-500" />
+              </div>
+            </div>
+            <div className="flex flex-row items-center">
+              <div className="w-[60%] sm:w-[80%]  flex items-center text-lg">
+                <DotFilledIcon className="text-red-600 mr-2 size-3" /> Mais de 1.000 projetos aprovados
+              </div>
+              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-200">
+                <Cross2Icon className="size-8 text-red-600" />
+              </div>
+              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-500">
+                <Cross2Icon className="size-8 text-red-600" />
+              </div>
+              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-100">
+                <CheckIcon className="size-8 text-lime-500" />
+              </div>
+            </div>
+            <div className="flex flex-row items-center">
+              <div className="w-[60%] sm:w-[80%]  flex items-center text-lg">
+                <DotFilledIcon className="text-red-600 mr-2 size-3" /> Metodologia de criação comprovada
+              </div>
+              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-200">
+                <Cross2Icon className="size-8 text-red-600" />
+              </div>
+              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-500">
+                <Cross2Icon className="size-8 text-red-600" />
+              </div>
+              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-100">
+                <CheckIcon className="size-8 text-lime-500" />
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </section>
 
     </div>
   );

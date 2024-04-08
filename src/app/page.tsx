@@ -1,7 +1,7 @@
 'use client'
 import { NavBar } from "@/components/nav-bar";
 import Image from "next/image";
-import methodIcons from '../../public/image/icons.png'
+import methodIcons from '../../public/image/foto-passos.png'
 import logoECami from '../../public/image/logoECami.png'
 import { useWindowSize } from "react-use";
 import { CardPassos } from "@/components/card-steps";
@@ -9,7 +9,9 @@ import { texts } from "@/lib/textosCardsPassos";
 import { CardPlansDesktop, } from "@/components/card-plans-desktop";
 import { CardPlansMobile } from "@/components/card-plans-mobile";
 import { useEffect, useState } from "react";
-import { CheckIcon, Cross2Icon, DotFilledIcon } from "@radix-ui/react-icons";
+import { CardComparsion } from "@/components/card-comparsion";
+import { CarrouselJobs } from "@/components/carrousel-jobs";
+import { Footer } from "@/components/footer";
 
 export default function Home() {
   const windowSize = useWindowSize();
@@ -37,7 +39,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="h-screen bg-zinc-50">
+    <div className="h-screen bg-white">
       <NavBar />
       <section className="mx-auto container flex flex-col-reverse sm:flex-row justify-between items-center h-[600px] sm:h-[500px] sm:px-10 sm:gap-2">
         <div className={`sm:h-full w-full items-center sm:items-start justify-center flex flex-col`}>
@@ -45,7 +47,7 @@ export default function Home() {
           <h2 className="sm:text-4xl text-2xl text-pretoCami sm:w-[500px] font-bold flex flex-col gap-1 items-center sm:items-start">
             <span className="justify-center sm:justify-start flex w-full text-center sm:text-start">Tenha uma marca</span>
             <span className="justify-center sm:justify-start flex w-full text-center sm:text-start">única e exclusiva</span>
-            <span className="justify-center sm:justify-start flex w-full text-center sm:text-start">desenhada a mão livre</span>
+            <span className="justify-center sm:justify-start flex w-full text-center sm:text-start">desenhada a <span className="ml-2 text-marromCami">mão livre</span></span>
             <span className="justify-center sm:justify-start flex w-full text-center sm:text-start">e que conte a sua história</span>
           </h2>
           <button className="mb-20 sm:mb-0 mt-10 w-full sm:w-10/12 rounded-full py-4 shadow-xl bg-green-500 text-zinc-50 hover:bg-marromCami hover:text-pretoCami transition-all duration-500 text-lg font-bold">
@@ -99,6 +101,7 @@ export default function Home() {
                 src={methodIcons}
               />
             </div>
+
           </div>
 
 
@@ -131,140 +134,30 @@ export default function Home() {
 
 
         </div>
+        <button className="container mx-auto flex items-center justify-center mb-20 sm:mb-0 mt-10 w-10/12 sm:w-4/12 rounded-full py-4 shadow-xl bg-green-500 text-zinc-50 hover:bg-marromCami hover:text-pretoCami transition-all duration-500 text-lg font-bold">
+          QUERO MAIS INFORMAÇÕES
+        </button>
       </section>
 
       {isClient && (windowSize.width <= 768 ? <CardPlansMobile /> : <CardPlansDesktop />)}
 
-      <section className="container mx-auto flex mt-10 sm:mt-0 h-screen">
-        <div className="w-full h-full px-3 rounded-2xl flex flex-col border border-zinc-300 shadow-xl bg-gradient-to-b to-zinc-50 from-zinc-100">
-          <div className="flex flex-col">
-            <div className="flex flex-row items-center h-[80px] ">
-              <div className="w-[60%] sm:w-[80%] flex items-center text-lg font-bold">
-                Compare você mesmo
-              </div>
-              <div className="w-[14%] sm:w-[10%] h-full flex justify-center items-center bg-zinc-200 text-zinc-500 text-center sm:py-1 text-xs sm:text-base">
-                <p>Pretador de <br /> serviço</p>
-              </div>
-              <div className="w-[14%] sm:w-[10%] h-full flex justify-center items-center bg-zinc-500 text-zinc-50 text-center sm:py-1 text-xs sm:text-base">
-                <p>Outras<br /> agências</p>
-              </div>
-              <div className="w-[14%] sm:w-[10%] h-full flex justify-center items-center bg-zinc-100 text-zinc-950 text-center py-1 text-xs sm:text-base">
-                <p>Cami<br /> agência</p>
-              </div>
+      <CardComparsion />
+
+
+      <section className='w-full py-24 bg-white '>
+        <div className='container mx-auto flex items-center gap-20 flex-col'>
+          <div className="flex flex-col gap-3 items-center">
+            <div className="flex flex-col sm:text-2xl text-lg text-pretoCami items-center mb-2">
+              <h3 className="w-full text-center">Mais de 1.000 projetos entregues</h3>
             </div>
-          </div>
-          <div className="flex flex-col w-full">
-            <div className="flex flex-row items-center ">
-              <div className="w-[60%] sm:w-[80%] flex items-center text-base sm:text-lg">
-                <DotFilledIcon className="text-red-600 mr-2 size-3 text-xs"  /> Atendimento durante todo o preocesso de criação
-              </div>
-              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-200">
-                <CheckIcon className="size-8 text-lime-500" />
-              </div>
-              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-500">
-                <CheckIcon className="size-8 text-lime-500" />
-              </div>
-              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-100">
-                <CheckIcon className="size-8 text-lime-500" />
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col w-full">
-            <div className="flex flex-row items-center">
-              <div className="w-[60%] sm:w-[80%] flex items-center text-lg">
-                <DotFilledIcon className="text-red-600 mr-2 size-3" /> <p className="text-sm sm:text-lg">Equipe criativa</p>
-              </div>
-              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-200">
-                <Cross2Icon className="size-8 text-red-600" />
-              </div>
-              <div className="w-[14%] sm:w-[10%] h-[32px] flex justify-center items-center bg-zinc-500">
-                <p className="font-bold text-zinc-300 items-center sm:text-base text-xs ">ás vezes</p>
-              </div>
-              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-100">
-                <CheckIcon className="size-8 text-lime-500" />
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col w-full">
-            <div className="flex flex-row items-center">
-              <div className="w-[60%] sm:w-[80%] flex items-center text-lg">
-                <DotFilledIcon className="text-red-600 mr-2 size-3" /><p className="text-sm sm:text-lg"> Reunião ilimitada com especialistas </p>
-              </div>
-              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-200">
-                <Cross2Icon className="size-8 text-red-600" />
-              </div>
-              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-500">
-                <Cross2Icon className="size-8 text-red-600" />
-              </div>
-              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-100">
-                <CheckIcon className="size-8 text-lime-500" />
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col w-full">
-            <div className="flex flex-row items-center">
-              <div className="w-[60%] sm:w-[80%]  flex items-center text-lg">
-                <DotFilledIcon className="text-red-600 mr-2 size-3" /> <p className="text-sm sm:text-lg">Desenhos feitos a mão livre</p>
-              </div>
-              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-200">
-                <Cross2Icon className="size-8 text-red-600" />
-              </div>
-              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-500">
-                <Cross2Icon className="size-8 text-red-600" />
-              </div>
-              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-100">
-                <CheckIcon className="size-8 text-lime-500" />
-              </div>
-            </div>
-          </div>
-          <div className="flex flex-col w-full">
-            <div className="flex flex-row items-center">
-              <div className="w-[60%] sm:w-[80%]  flex items-center text-lg">
-                <DotFilledIcon className="text-red-600 mr-2 size-3" /> <p className="text-sm sm:text-lg">Especialistas em criação de marca profissionais da saúde</p>
-              </div>
-              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-200">
-                <Cross2Icon className="size-8 text-red-600" />
-              </div>
-              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-500">
-                <Cross2Icon className="size-8 text-red-600" />
-              </div>
-              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-100">
-                <CheckIcon className="size-8 text-lime-500" />
-              </div>
-            </div>
-            <div className="flex flex-row items-center">
-              <div className="w-[60%] sm:w-[80%]  flex items-center text-lg">
-                <DotFilledIcon className="text-red-600 mr-2 size-3 text-xs" /><p className="text-sm sm:text-lg"> Mais de 1.000 projetos aprovados </p>
-              </div>
-              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-200">
-                <Cross2Icon className="size-8 text-red-600" />
-              </div>
-              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-500">
-                <Cross2Icon className="size-8 text-red-600" />
-              </div>
-              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-100">
-                <CheckIcon className="size-8 text-lime-500" />
-              </div>
-            </div>
-            <div className="flex flex-row items-center">
-              <div className="w-[60%] sm:w-[80%]  flex items-center text-lg">
-                <DotFilledIcon className="text-red-600 mr-2 size-3 text-xs" /> <p className="text-sm sm:text-lg">Metodologia de criação comprovada</p>
-              </div>
-              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-200">
-                <Cross2Icon className="size-8 text-red-600" />
-              </div>
-              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-500">
-                <Cross2Icon className="size-8 text-red-600" />
-              </div>
-              <div className="w-[14%] sm:w-[10%] flex justify-center items-center bg-zinc-100">
-                <CheckIcon className="size-8 text-lime-500" />
-              </div>
+            <div className="mb-2">
+              <p className="text-cinzaCami text-lg w-full text-center">Alguns comentarios reais, tirados de dentro do nosso suporte do whatsapp</p>
             </div>
           </div>
         </div>
+          <CarrouselJobs />
       </section>
-
-
+      <Footer />
     </div>
   );
 }

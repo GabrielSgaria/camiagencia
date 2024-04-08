@@ -72,7 +72,7 @@ export function CardPlansDesktop() {
                                 timbrado de <span className="font-sans">A4.</span >
                             </p>
 
-                            <p>
+                            <p id='comparsion'>
                                 <span className="font-bold mr-1">Completo:</span>
                                 Tudo dos planos anteriores, mais
                                 50 templates para feed e 50 templates para Stories

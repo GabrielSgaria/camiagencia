@@ -2,6 +2,12 @@ import Image from "next/image";
 import logo from "../../public/image/logo.png"
 import { motion } from 'framer-motion'
 export function NavBar() {
+    const scrollToSection = (id: string) => {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    };
     return (
         <div className="bg-transparent">
             <nav className="sm:flex mx-auto container h-20">
@@ -19,8 +25,14 @@ export function NavBar() {
                         />
                     </motion.div>
                     <div className="sm:flex gap-6 hidden ">
-                        <button className="h-full transition-all duration-200 text-cinzaCami hover:text-zinc-50  hover:bg-marromCami font-sans text-sm uppercase px-2">O QUE FAZEMOS?</button>
-                        <button className="h-full transition-all duration-200 text-cinzaCami hover:text-zinc-50 hover:bg-marromCami font-sans text-sm uppercase px-2">BENEFÍCIOS</button>
+                        <button className="h-full transition-all duration-200 text-cinzaCami hover:text-zinc-50  hover:bg-marromCami font-sans text-sm uppercase px-2"
+                            onClick={() => scrollToSection("jobs")}>
+                            O QUE FAZEMOS?
+                        </button>
+                        <button className="h-full transition-all duration-200 text-cinzaCami hover:text-zinc-50 hover:bg-marromCami font-sans text-sm uppercase px-2"
+                            onClick={() => scrollToSection("comparsion")}>
+                            BENEFÍCIOS
+                        </button>
                     </div>
 
 

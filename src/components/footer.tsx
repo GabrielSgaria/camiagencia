@@ -33,25 +33,25 @@ export function Footer() {
                         <a
                             onClick={() =>
                                 sendMensage(
-                                    55998452-5459,
-                                    "Olá! Vim através do site da Cami Agência Criativa."
+                                  554199769766,
+                                  "Olá! Vim através do site da Cami Agência Criativa."
                                 )
-                            }
+                              }
                             className="flex cursor-pointer items-center justify-center gap-4 text-neutral-800"
                         >
                             <FaWhatsapp className="size-6" />
                             <p className="h-6 items-center  justify-center font-semibold transition-all duration-500 hover:border-b-[1px] hover:border-neutral-800">
-                                (41) ??
+                                (41) 9976-9766
                             </p>
                         </a>
                         <Link
                             target="blank"
-                            href="mailto:"
+                            href="mailto:igor@camiagencia.com.br"
                             className="flex cursor-pointer  items-center gap-4 text-neutral-800"
                         >
                             <EnvelopeClosedIcon className="size-6" />
                             <p className="h-6 font-semibold transition-all duration-500 hover:border-b-[1px] hover:border-neutral-800">
-                                ??
+                                igor@camiagencia.com.br
                             </p>
                         </Link>
                     </div>

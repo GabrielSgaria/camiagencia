@@ -30,12 +30,12 @@ export const metadata: Metadata = {
     siteName: "Cami Agência Criativa",
     images: [
       {
-        url: "/public/image/logoECami.png",
+        url: "https://opengraph.b-cdn.net/production/documents/6546cd94-9b6f-4376-9988-89d3d74bc121.png?token=asggRx_vQ1k5WIrQ92CM-hK1FCbk6aYkHanoODyh7CM&height=283&width=313&expires=33249191208",
         width: 800,
         height: 600,
       },
       {
-        url: "/public/image/logo.png",
+        url: "https://opengraph.b-cdn.net/production/documents/6546cd94-9b6f-4376-9988-89d3d74bc121.png?token=asggRx_vQ1k5WIrQ92CM-hK1FCbk6aYkHanoODyh7CM&height=283&width=313&expires=33249191208",
         width: 1800,
         height: 1600,
       },

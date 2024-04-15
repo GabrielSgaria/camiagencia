@@ -135,17 +135,30 @@ export default function Home() {
       <section className="sm:pt-16" id="jobs">
         <div className="container mx-auto flex flex-col text-zinc-50 justify-center items-center gap-8" >
 
+
           <div className="flex flex-col gap-3 items-center">
-            <div className="flex flex-col sm:text-2xl text-lg text-pretoCami items-center mb-2">
-              <h3 className="w-full text-center">Utilizamos uma metodologia de 7 passos</h3>
-              <h3 className="w-full text-center">clara e objetiva, onde o cliente participa de todo o processo</h3>
+            <div className="flex flex-col sm:text-2xl text-lg text-pretoCami items-center mb-2 mx-1 max-w-full sm:max-w-[600px]">
+              <h3 className="w-full text-justify sm:text-center">Utilizamos uma metodologia de 7 passos
+                clara e objetiva, onde o cliente participa de todo o processo, A criação de marca é uma via de mão dupla.
+              </h3>
+            </div>
+          
+            <div>
+              <p className="text-cinzaCami text-lg sm:text-2xl">Método Cami</p>
+            </div>
+
+            {/* <div className="flex flex-col gap-3 items-center">
+            <div className="flex flex-col sm:text-2xl text-lg text-pretoCami items-center mb-2 mx-1 max-w-full sm:max-w-[600px]">
+              <h3 className="w-full text-justify sm:text-center">Utilizamos uma metodologia de 7 passos
+                clara e objetiva, onde o cliente participa de todo o processo
+              </h3>
             </div>
             <div className="mb-2">
               <p className="text-cinzaCami text-lg w-full text-center">A criação de marca é uma via de mão dupla</p>
             </div>
             <div>
               <p className="text-cinzaCami text-lg sm:text-2xl">Método Cami</p>
-            </div>
+            </div> */}
             <motion.div
               initial={{ opacity: 0, y: -30, scale: 0.7 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}

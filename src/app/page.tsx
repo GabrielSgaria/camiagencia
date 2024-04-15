@@ -92,7 +92,7 @@ export default function Home() {
           <h2 className="sm:text-4xl text-2xl text-pretoCami sm:w-[500px] font-bold flex flex-col gap-1 items-center sm:items-start">
             <span className="justify-center sm:justify-start flex w-full text-center sm:text-start">Tenha uma marca</span>
             <span className="justify-center sm:justify-start flex w-full text-center sm:text-start">única e exclusiva</span>
-            <span className="justify-center sm:justify-start flex w-full text-center sm:text-start">desenhada a <span className="ml-2 text-marromCami">mão livre</span></span>
+            <span className="justify-center sm:justify-start flex w-full text-center sm:text-start">desenhada à <span className="ml-2 text-marromCami">mão livre</span></span>
             <span className="justify-center sm:justify-start flex w-full text-center sm:text-start">e que conte a sua história</span>
           </h2>
           <button

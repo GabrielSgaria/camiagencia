@@ -22,6 +22,7 @@ export const metadata: Metadata = {
   title: "Cami Agência Criativa",
   description: "Cami Agência Criativa | Identidade Visual",
   metadataBase: new URL("https://camiagencia.vercel.app"),
+  icons: '/favicon.png',
   openGraph: {
     title: "Cami Agência Criativa | Identidade Visual",
     description: "Cami Agência Criativa | Identidade Visual",

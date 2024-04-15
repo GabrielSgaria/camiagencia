@@ -4,13 +4,13 @@ import "./globals.css";
 
 const visby = localFont({
   src: [{
-    path: '../../public/fonts/visby_font/Fontspring-DEMO-visbycf-regular.otf',
+    path: '../../public/fonts/visby_font/VisbyRegular.otf',
     weight: "400",
     style: 'normal',
 
   },
   {
-    path: '../../public/fonts/visby_font/Fontspring-DEMO-visbycf-bold.otf',
+    path: '../../public/fonts/visby_font/VisbyBold.otf',
     weight: "700",
     style: 'normal'
   }

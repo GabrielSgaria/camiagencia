@@ -52,7 +52,7 @@ export function CardPlansMobile() {
                             <h1>plano que mais se adeque</h1>
                             <h1>ao seu momento e necessidade.</h1>
                         </div>
-                        <div className="flex flex-col gap-2 text-base">
+                        <div className="flex flex-col gap-2 text-base text-justify">
 
                             <p>
                                 <span className="font-bold mr-1">
@@ -68,7 +68,7 @@ export function CardPlansMobile() {
 
                                 Tudo do Básico, mais layouts para
                                 impressos, como: Cartao de visitas, receituario,
-                                timbrado de <span className="font-sans">A4.</span >
+                                timbrado de A4.
                             </p>
 
                             <p>

@@ -117,17 +117,17 @@ export default function Home() {
               src={logoECami}
 
             />
-            <div className="absolute -bottom-6 sm:left-1/2 transform -translate-y-[204px] sm:-translate-y-0 sm:-translate-x-1/2 bg-zinc-50/90 shadow-md px-2 py-2 sm:px-4 sm:py-2 rounded-3xl flex flex-col items-start justify-center ">
-              <span className="font-sans w-full text-lg sm:text-2xl text-marromCami">+5 Anos</span>
-              <span className="font-sans w-full text-xs sm:text-xs text-center text-cinzaCami">De Experiência</span>
+            <div className="absolute -bottom-6 sm:left-1/2 transform -translate-y-[20px] sm:-translate-y-0 sm:-translate-x-1/2 bg-zinc-50/90 shadow-md px-2 py-2 sm:px-4 sm:py-2 rounded-3xl flex flex-col items-start justify-center ">
+              <span className="font-normal w-full text-lg sm:text-2xl text-marromCami">+5 Anos</span>
+              <span className="font-normal w-full text-xs sm:text-xs text-center text-cinzaCami">De Experiência</span>
             </div>
             <div className="absolute bottom-0 right-0 bg-zinc-50/90 shadow-md rounded-3xl flex flex-col items-start justify-center px-2 py-2 sm:px-4 sm:py-2">
-              <span className="font-sans w-full text-lg sm:text-2xl text-marromCami">+20</span>
-              <span className="font-sans w-full text-xs sm:text-xs text-center text-cinzaCami">Paises Atendidos</span>
+              <span className="font-normal w-full text-lg sm:text-2xl text-marromCami">+20</span>
+              <span className="font-normal w-full text-xs sm:text-xs text-center text-cinzaCami">Países Atendidos</span>
             </div>
             <div className="absolute -top-10 sm:top-0 -right-4 bg-zinc-50/90 shadow-md rounded-3xl flex flex-col items-start justify-center px-2 py-2 sm:px-4 sm:py-2">
-              <span className="font-sans w-full text-lg sm:text-2xl text-marromCami" >+1.000 Mil</span>
-              <span className="font-sans w-full text-xs sm:text-xs text-center text-cinzaCami" >Projetos Aprovados</span>
+              <span className="font-normal w-full text-lg sm:text-2xl text-marromCami" >+1.000 Mil</span>
+              <span className="font-normal w-full text-xs sm:text-xs text-center text-cinzaCami" >Projetos Aprovados</span>
             </div>
           </div>
         </div>
@@ -190,7 +190,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.3 }}
             className="mt-10 text-pretoCami w-full sm:w-[500px] h-full rounded-3xl py-3 px-5 border bg-gradient-to-b from-zinc-50 to-zinc-100 border-zinc-300 shadow-xl">
-            <h1 className="font-bold text-red-600 text-2xl mb-2 text-center sm:text-start ">
+            <h1 className="font-bold text-marromCami text-2xl mb-2 text-center sm:text-start ">
               Cami, e se eu não gostar?
             </h1>
             <p className="w-full h-full">
@@ -251,4 +251,3 @@ export default function Home() {
     </div>
   );
 }
- 

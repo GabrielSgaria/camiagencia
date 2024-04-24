@@ -16,6 +16,7 @@ import { Footer } from "@/components/footer";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { WhatsappLogo } from "@phosphor-icons/react";
 import { ButtonWhatsAppFixed } from "@/components/button-whatsapp-fixed";
+import { AccordionQuestions } from "@/components/accordion-questions";
 
 
 export default function Home() {
@@ -253,7 +254,7 @@ export default function Home() {
         transition={{ duration: 0.3 }}
         className="bg-zinc-50">
         {isClient && (windowSize.width <= 768 ? <CardPlansMobile /> : <CardPlansDesktop />)}
-        <div className="container mx-auto flex justify-center mb-14 ">
+        <div className="container mx-auto flex justify-center mt-10 ">
 
 
           <button
@@ -263,28 +264,106 @@ export default function Home() {
                 "Olá! Vim através do site da Cami Agência Criativa."
               )
             }
-            className="sm:py-5 sm:px-10 py-2 rounded-2xl bg-verdeCami font-bold text-xl text-brancoCami">
+            className="sm:py-5 sm:px-10 pb-2 rounded-2xl bg-verdeCami font-bold text-xl text-brancoCami">
             Quero fazer minha identidade visual
           </button>
         </div>
 
+        <section className='w-full py-24 bg-white'>
+          <div className='container mx-auto flex'>
+            <div className="flex flex-col gap-3 items-center mb-10">
+              <h3 className="w-full text-center font-bold text-4xl">Conheça o nosso portfólio</h3>
+              <p className="text-cinzaCami text-2xl w-full text-center mb-10">Com mais de 1000 projetos entregues</p>
+
+              <div className="grid grid-flow-row grid-cols-2 gap-3 lg:grid-cols-3 lg:gap-x-10 lg:gap-y-3 ">
+                <iframe src="https://www.behance.net/embed/project/195815305?ilo0=1" allow="clipboard-write" className="h-[250px] w-[200px] sm:h-[250px] sm:w-[380px]"></iframe>
+                <iframe src="https://www.behance.net/embed/project/195768507?ilo0=1" allow="clipboard-write" className="h-[250px] w-[200px] sm:h-[250px] sm:w-[380px]"></iframe>
+                <iframe src="https://www.behance.net/embed/project/195767913?ilo0=1" allow="clipboard-write" className="h-[250px] w-[200px] sm:h-[250px] sm:w-[380px]"></iframe>
+                <iframe src="https://www.behance.net/embed/project/195766743?ilo0=1" allow="clipboard-write" className="h-[250px] w-[200px] sm:h-[250px] sm:w-[380px]"></iframe>
+                <iframe src="https://www.behance.net/embed/project/195765751?ilo0=1" allow="clipboard-write" className="h-[250px] w-[200px] sm:h-[250px] sm:w-[380px]"></iframe>
+                <iframe src="https://www.behance.net/embed/project/195765303?ilo0=1" allow="clipboard-write" className="h-[250px] w-[200px] sm:h-[250px] sm:w-[380px]"></iframe>
+                <iframe src="https://www.behance.net/embed/project/195764189?ilo0=1" allow="clipboard-write" className="hidden sm:flex sm:h-[250px] sm:w-[380px]"></iframe>
+                <iframe src="https://www.behance.net/embed/project/195736415?ilo0=1" allow="clipboard-write" className="hidden sm:flex sm:h-[250px] sm:w-[380px]"></iframe>
+                <iframe src="https://www.behance.net/embed/project/195766299?ilo0=1" allow="clipboard-write" className="hidden sm:flex sm:h-[250px] sm:w-[380px]"></iframe>
+              </div>
+            </div>
+          </div>
+
+        </section>
         <CardComparsion />
       </motion.div>
-
-
-      <section className='w-full py-24 bg-white '>
-        <div className='container mx-auto flex items-center gap-20 flex-col'>
-          <div className="flex flex-col gap-3 items-center">
-            <div className="flex flex-col sm:text-2xl text-lg text-pretoCami items-center mb-2">
-              <h3 className="w-full text-center">Mais de 1.000 projetos entregues</h3>
+      <section className="py-24 bg-white">
+        <div className="container mx-auto flex justify-center ">
+          <Image width={900} height={900} src='/image/prancheta1.png' alt="Foto" className="shadow-2xl rounded-b-[40px]" />
+        </div>
+      </section>
+      <section className="bg-pretoCami py-24">
+        <div className="container mx-auto flex flex-col">
+          <div className="items-center flex flex-col">
+            <h1 className="font-bold text-4xl text-brancoCami" >A praticidade é o nosso lema.</h1>
+            <p className="font-normal text-3xl text-brancoCami" >E não somos nós que estamos falando...</p>
+          </div>
+        </div>
+      </section>
+      <section className="py-24 bg-azulCami">
+        <div className="container mx-auto flex justify-center">
+          <div className="items-center flex flex-col">
+            <h1 className="font-bold text-4xl text-brancoCami" >Conheça os idealizadores</h1>
+            <p className="font-normal text-3xl text-brancoCami" >da Agência Criativa</p>
+          </div>
+        </div>
+        <div className="flex flex-row justify-around">
+          <div className="w-[600px] h-[250px] flex items-center mt-10 relative shadow-2xl">
+            <div className="max-w-[253px]">
+              <Image width={900} height={900} src='/image/prancheta4.png' alt="Image Igor" className="rounded-l-2xl overflow-hidden" />
             </div>
-            <div className="mb-2">
-              <p className="text-cinzaCami text-lg w-full text-center">Alguns comentarios reais, tirados de dentro do nosso suporte do whatsapp</p>
+            <div className="bg-pretoCami/85 w-[347px] h-[203.5px] p-5 absolute right-0 bottom-0 rounded-br-2xl">
+              <h1 className="text-brancoCami font-bold text-xl">
+                Igor Bittencourt
+              </h1>
+              <p className="text-brancoCami/90 font-normal">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laborum, quaerat non deleniti pariatur aperiam numquam voluptate saepe adipisci!
+                Eius quos modi corrupti fugit consectetur reiciendis harum atque id necessitatibus ipsam.
+              </p>
+            </div>
+          </div>
+          <div className="w-[600px] h-[250px] flex items-center mt-10 relative shadow-2xl">
+            <div className="max-w-[253px]">
+              <Image width={900} height={900} src='/image/prancheta5.png' alt="Image Igor" className="rounded-l-2xl overflow-hidden" />
+            </div>
+            <div className="bg-pretoCami/85 w-[347px] h-[203.5px] p-5 absolute right-0 bottom-0 rounded-br-2xl">
+              <h1 className="text-brancoCami font-bold text-xl">
+                Igor Bittencourt
+              </h1>
+              <p className="text-brancoCami/90 font-normal">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laborum, quaerat non deleniti pariatur aperiam numquam voluptate saepe adipisci!
+                Eius quos modi corrupti fugit consectetur reiciendis harum atque id necessitatibus ipsam.
+              </p>
             </div>
           </div>
         </div>
-        <CarrouselJobs />
       </section>
+      <section className="py-24 bg-brancoCami">
+        <div className="container mx-auto flex justify-between px-0">
+          <div className="w-80 flex flex-col gap-10">
+            <div className="text-pretoCami font-bold text-4xl">
+              <h1>Perguntas</h1>
+              <h1>Frequentes</h1>
+            </div>
+            <p className="text-pretoCami/80">
+              Se tiver qualquer outra pergunta,
+              por favor, entre em contato através do WhatsApp:
+            </p>
+            <button className="shadow-xl rounded-2xl border-2 border-azulCami py-5 px-3 text-azulCami font-bold text-xl hover:bg-azulCami transition-all hover:text-brancoCami">
+              Falar no WhatsApp
+            </button>
+          </div>
+          <AccordionQuestions />
+        </div>
+      </section>
+
       <ButtonWhatsAppFixed />
       <Footer />
     </div>

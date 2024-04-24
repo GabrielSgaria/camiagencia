@@ -1,8 +1,9 @@
 'use client'
 import { NavBar } from "@/components/nav-bar";
 import Image from "next/image";
-import methodIcons from '../../public/image/foto-passos.png'
-import logoECami from '../../public/image/logoECami.png'
+import logoECami from '../../public/image/logoECami.png';
+import iconStar from '../../public/image/8.png'
+import iconEntrega from '../../public/image/icons/7.png'
 import { useWindowSize } from "react-use";
 import { CardPassos } from "@/components/card-steps";
 import { texts } from "@/lib/textosCardsPassos";
@@ -87,82 +88,85 @@ export default function Home() {
   return (
     <div className="h-screen bg-white">
       <NavBar />
-      <section className="mx-auto container flex flex-col-reverse sm:flex-row justify-between items-center h-[600px] sm:h-[500px] sm:px-10 sm:gap-2">
-        <div className={`sm:h-full w-full items-center sm:items-start justify-center flex flex-col`}>
-          <span className="text-lg text-center sm:text-start sm:text-xl text-cinzaCami sm:max-w-[400px] w-full font-normal">Procurando uma Identidade Visual?</span>
-          <h2 className="sm:text-4xl text-2xl text-pretoCami sm:w-[500px] font-bold flex flex-col gap-1 items-center sm:items-start">
-            <span className="justify-center sm:justify-start flex w-full text-center sm:text-start">Tenha uma marca</span>
-            <span className="justify-center sm:justify-start flex w-full text-center sm:text-start">única e exclusiva</span>
-            <span className="justify-center sm:justify-start flex w-full text-center sm:text-start">desenhada à <span className="ml-2 text-marromCami">mão livre</span></span>
-            <span className="justify-center sm:justify-start flex w-full text-center sm:text-start">e que conte a sua história</span>
-          </h2>
+      <section className="flex flex-col mx-auto container pb-20">
+        <div className="flex flex-col-reverse lg:flex-row items-center h-[430px] sm:h-[650px] lg:h-[400px] sm:gap-2 justify-between">
+          <div className="sm:h-full w-full items-center sm:items-start justify-center flex flex-col sm:mt-96 lg:mt-0">
+            <div className="flex flex-col relative pb-6">
+              <span className="text-xl text-center sm:text-start sm:text-3xl text-emerald-800 sm:max-w-[500px] w-full font-semibold">
+                Quer atrair mais paciente e
+                melhorar seu posicionamento?
+              </span>
+              <div className="absolute w-[600px] h-1 bg-emerald-800 -left-96 bottom-0 z-40 rounded-full" />
+            </div>
+            <h2 className="sm:text-3xl text-xl text-marromCami sm:w-[500px] font-bold flex flex-col gap-1 items-center sm:items-start pt-4">
+              <span className="justify-center sm:justify-start flex w-full text-center sm:text-start">
+                Tenha uma identidade visual
+                exclusiva desenhada à mão
+                livre e que conte a sua história</span>
+            </h2>
+          </div>
+          <div className="relative w-full top-28 sm:top-48 lg:top-0 sm:right-0 flex justify-end items-center">
+            <div className="absolute">
+              <Image
+                width={900}
+                height={900}
+                alt="Logo Cami Agência Criativa"
+                src={logoECami}
+              />
+              <div className="absolute -bottom-6 sm:left-1/2 transform -translate-y-[20px] sm:-translate-y-0 sm:-translate-x-1/2 bg-zinc-50/90 shadow-md px-2 py-2 sm:px-4 sm:py-2 rounded-3xl flex flex-col items-start justify-center ">
+                <span className="font-normal w-full text-lg sm:text-2xl text-marromCami">+5 Anos</span>
+                <span className="font-normal w-full text-xs sm:text-xs text-center text-cinzaCami">De Experiência</span>
+              </div>
+              <div className="absolute bottom-0 right-0 bg-zinc-50/90 shadow-md rounded-3xl flex flex-col items-start justify-center px-2 py-2 sm:px-4 sm:py-2">
+                <span className="font-normal w-full text-lg sm:text-2xl text-marromCami">+20</span>
+                <span className="font-normal w-full text-xs sm:text-xs text-center text-cinzaCami">Países Atendidos</span>
+              </div>
+              <div className="absolute -top-10 sm:top-0 -right-4 bg-zinc-50/90 shadow-md rounded-3xl flex flex-col items-start justify-center px-2 py-2 sm:px-4 sm:py-2">
+                <span className="font-normal w-full text-lg sm:text-2xl text-marromCami" >+1.000 Mil</span>
+                <span className="font-normal w-full text-xs sm:text-xs text-center text-cinzaCami" >Projetos Aprovados</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="relative">
+          <Image
+            width={900}
+            height={900}
+            alt="Icone estrela Ag.Cami"
+            src={iconStar}
+            className="w-20 lg:w-48 z-10"
+          />
+          <div className="w-[250px] h-[120px] lg:h-[100px] lg:w-[700px] bg-marromCami absolute z-20 top-7 left-7 lg:top-12 lg:left-20 rounded-3xl">
+            <p className="py-2 px-1 lg:px-5 lg:py-4 text-base lg:text-2xl font-bold text-zinc-200 text-center">
+              1º Agência do Brasil especialziada em criação de marca,
+              desenhada a mão livre, para profissionais da saúde!
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="flex items-center justify-center bg-zinc-800 h-[500px] mt-10">
+        <span className="text-brancoCami text-6xl">video</span>
+      </section>
+
+
+
+      <section className="pt-16" id="jobs">
+        <div className="container mx-auto flex flex-col text-brancoCami justify-center items-center gap-8" >
           <button
-            className="mb-20 sm:mb-0 mt-10 w-full sm:w-10/12 rounded-full py-4 shadow-xl bg-green-500 text-zinc-50 hover:bg-green-400 hover:text-pretoCami transition-all duration-500 text-lg font-bold"
             onClick={() =>
               sendMensage(
                 554199769766,
                 "Olá! Vim através do site da Cami Agência Criativa."
               )
-            }>
-            QUERO MAIS INFORMAÇÕES
+            }
+            className="sm:py-5 sm:px-10 py-2 rounded-2xl bg-verdeCami font-bold text-xl">
+            Quero fazer minha identidade visual
           </button>
-        </div>
-        <div className="relative w-full top-32 sm:top-0 sm:right-0 flex justify-end items-center">
-          <div
-
-            className="absolute">
-            <Image
-              width={900}
-              height={900}
-              alt="Logo Cami Agência Criativa"
-              src={logoECami}
-
-            />
-            <div className="absolute -bottom-6 sm:left-1/2 transform -translate-y-[20px] sm:-translate-y-0 sm:-translate-x-1/2 bg-zinc-50/90 shadow-md px-2 py-2 sm:px-4 sm:py-2 rounded-3xl flex flex-col items-start justify-center ">
-              <span className="font-normal w-full text-lg sm:text-2xl text-marromCami">+5 Anos</span>
-              <span className="font-normal w-full text-xs sm:text-xs text-center text-cinzaCami">De Experiência</span>
-            </div>
-            <div className="absolute bottom-0 right-0 bg-zinc-50/90 shadow-md rounded-3xl flex flex-col items-start justify-center px-2 py-2 sm:px-4 sm:py-2">
-              <span className="font-normal w-full text-lg sm:text-2xl text-marromCami">+20</span>
-              <span className="font-normal w-full text-xs sm:text-xs text-center text-cinzaCami">Países Atendidos</span>
-            </div>
-            <div className="absolute -top-10 sm:top-0 -right-4 bg-zinc-50/90 shadow-md rounded-3xl flex flex-col items-start justify-center px-2 py-2 sm:px-4 sm:py-2">
-              <span className="font-normal w-full text-lg sm:text-2xl text-marromCami" >+1.000 Mil</span>
-              <span className="font-normal w-full text-xs sm:text-xs text-center text-cinzaCami" >Projetos Aprovados</span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="sm:pt-16" id="jobs">
-        <div className="container mx-auto flex flex-col text-zinc-50 justify-center items-center gap-8" >
-
-
-          <div className="flex flex-col gap-3 items-center">
-            <div className="flex flex-col sm:text-2xl text-lg text-pretoCami items-center mb-2 mx-1 max-w-full sm:max-w-[600px]">
-              <h3 className="w-full text-justify sm:text-center">Utilizamos uma metodologia de 7 passos
-                clara e objetiva, onde o cliente participa de todo o processo, A criação de marca é uma via de mão dupla.
-              </h3>
-            </div>
-          
-            <div>
-              <p className="text-cinzaCami text-lg sm:text-2xl">Método Cami</p>
-            </div>
-            <motion.div
-              initial={{ opacity: 0, y: -30, scale: 0.7 }}
-              whileInView={{ opacity: 1, y: 0, scale: 1 }}
-              transition={{ duration: 0.2 }}
-              className="w-full sm:w-8/12">
-
-              <Image
-                width={900}
-                height={900}
-                alt="Logo Cami Agência Criativa"
-                src={methodIcons}
-              />
-            </motion.div>
+          <div className="flex flex-col gap-0 justify-center items-center my-4">
+            <h1 className="font-bold text-marromCami sm:text-3xl text-xl text-center">Criamos a sua marca através de um metódo compravado de 7 passos.</h1>
+            <h1 className="font-bold text-marromCami sm:text-3xl text-xl text-center">Onde você participa de todo o processo.</h1>
 
           </div>
-
 
           <div ref={ref}>
             <motion.ul
@@ -172,11 +176,13 @@ export default function Home() {
               transition={{ duration: 0.3 }}
               animate={mainControls}
               exit='hidden'
-              className="containerUl grid grid-flow-row grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 gap-y-5 bg-gradient-to-b from-zinc-50 to-zinc-100 py-8 px-1 rounded-2xl shadow-xl">
+              className="containerUl flex flex-col sm:grid sm:grid-flow-row gap-3 sm:grid-cols-2 sm:gap-4 gap-y-5 sm:py-8 sm:px-1 ">
 
               {texts.map((texts, index) => (
-                <motion.li key={index} className='flex flex-row items-center gap-4' variants={item}>
+                <motion.li key={index} className='flex flex-col sm:flex-row items-center gap-4' variants={item}>
                   <CardPassos
+                    srcIcon={texts.srcIcon}
+                    altIcon={texts.altIcon}
                     tituloCardPassos={texts.title}
                     textoCardPassos={texts.text}
                   />
@@ -190,29 +196,56 @@ export default function Home() {
             initial={{ opacity: 0, y: -30, scale: 0.7 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.3 }}
-            className="mt-10 text-pretoCami w-full sm:w-[500px] h-full rounded-3xl py-3 px-5 border bg-gradient-to-b from-zinc-50 to-zinc-100 border-zinc-300 shadow-xl">
-            <h1 className="font-bold text-marromCami text-2xl mb-2 text-center sm:text-start ">
-              Cami, e se eu não gostar?
-            </h1>
-            <p className="w-full h-full">
-              Como nosso maior objetivo é que você ame e se identifique com o seu projeto,
-              disponibilizamos até 3 alterações no seu projeto. Então pode ficar tranquila que vamos
-              chegar há um resultado que te represente!
-            </p>
-          </motion.div>
+            className="text-pretoCami w-full sm:w-11/12 h-full rounded-3xl text-center sm:text-start flex items-center max-w-[750px] gap-10">
 
+            <div className="min-w-20 max-w-20 sm:min-w-72 sm:max-w-72">
+              <Image
+                width={900}
+                height={900}
+                src={iconEntrega}
+                alt='Icon 7 entrega'
+              />
+            </div>
+            <div >
+
+              <h1 className="font-bold text-azulCami text-xl sm:text-xl">
+                7.Entrega
+              </h1>
+              <p className="font-bold text-azulCami text-base sm:text-lg">
+                Nosso maior objetivo é que ao final você amee se identifique com a sua marca. Ah! e é claro, use muitooooooooo!
+              </p>
+            </div>
+          </motion.div>
         </div>
-        <button
-          className="container mx-auto flex items-center justify-center mt-10 w-10/12 sm:w-4/12 rounded-full py-4 shadow-xl bg-green-500 text-zinc-50 hover:bg-green-400 hover:text-pretoCami transition-all duration-500 text-lg font-bold"
-          onClick={() =>
-            sendMensage(
-              554199769766,
-              "Olá! Vim através do site da Cami Agência Criativa."
-            )
-          }
-        >
-          QUERO MAIS INFORMAÇÕES
-        </button>
+        <div className="flex flex-col">
+          <div className="relative py-20">
+            <div className="w-[180px] sm:w-[350px] lg:w-[550px] h-16 bg-marromCami rounded-r-full absolute left-0">
+              <div className="flex items-center justify-center h-full">
+                <p className="text-base sm:text-2xl lg:text-3xl font-bold text-brancoCami text-start pl-2">
+                  Cami, e se eu não gostar?
+                </p>
+              </div>
+            </div>
+            <div className="w-[180px] sm:w-[350px] lg:w-[550px] h-16 bg-marromCami rounded-l-full absolute right-0">
+              <div className="flex items-center justify-center h-full">
+                <p className="text-base sm:text-2xl lg:text-3xl font-bold text-brancoCami text-end pr-2">
+                  Tenho pressa, e agora?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="container mx-auto flex flex-row justify-between sm:gap-10 lg:gap-0 px-0 mt-5 items-start">
+            <div className="w-full sm:w-[350px] lg:w-[450px] text-base pl-2 sm:pl-0 sm:text-2xl lg:text-3xl font-bold text-verdeCami space-y-9">
+              Sem problemas, é normal!
+              Alteramos até 3x para que você tenha uma marca única e que se identifique!
+            </div>
+            <div className="w-full sm:w-[350px] lg:w-[450px] text-base pr-2 sm:pr-0 sm:text-2xl lg:text-3xl font-bold text-verdeCami text-end">
+              Calma, temos a modalidade express.
+              Onde, mesmo com as alterações enviamos seu projeto em até 2 semanas.
+            </div>
+          </div>
+        </div>
+
       </section>
       <motion.div
         initial={{ opacity: 0, y: -30, scale: 0.7 }}
@@ -220,9 +253,24 @@ export default function Home() {
         transition={{ duration: 0.3 }}
         className="bg-zinc-50">
         {isClient && (windowSize.width <= 768 ? <CardPlansMobile /> : <CardPlansDesktop />)}
+        <div className="container mx-auto flex justify-center mb-14 ">
+
+
+          <button
+            onClick={() =>
+              sendMensage(
+                554199769766,
+                "Olá! Vim através do site da Cami Agência Criativa."
+              )
+            }
+            className="sm:py-5 sm:px-10 py-2 rounded-2xl bg-verdeCami font-bold text-xl text-brancoCami">
+            Quero fazer minha identidade visual
+          </button>
+        </div>
 
         <CardComparsion />
       </motion.div>
+
 
       <section className='w-full py-24 bg-white '>
         <div className='container mx-auto flex items-center gap-20 flex-col'>

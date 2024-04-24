@@ -15,7 +15,11 @@ const config: Config = {
     },
     extend: {
       colors: {
-        'marromCami': '#a86344',
+        'marromCami': '#a76243',
+        'marromCami2': '#d1a999',
+        'brancoCami': '#f6f0ee',
+        'verdeCami':'#09524c',
+        'azulCami':'#273f56',
         'cinzaCami': '#575757',
         'pretoCami': '#0c0a09',
       },

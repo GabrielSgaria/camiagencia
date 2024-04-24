@@ -1,30 +1,49 @@
+import icon1 from '../../public/image/icons/1.png'
+import icon2 from '../../public/image/icons/2.png'
+import icon3 from '../../public/image/icons/3.png'
+import icon4 from '../../public/image/icons/4.png'
+import icon5 from '../../public/image/icons/5.png'
+import icon6 from '../../public/image/icons/6.png'
+
+
+
 export const texts = [
     {
-        title: "Formulário:",
-        text: "A etapa mais importante, onde você vai responder em média 20 perguntas sobre você e seu negócio.",
+
+        srcIcon: icon1,
+        altIcon: 'icon1',
+        title: "1.Formulário:",
+        text: "É através dele que começamos a conhecer a sua história, com algumas perguntas sobre o que você gosta e sobre a sua área de atuação, reunimos algumas informações para conversamos na reunião",
     },
     {
-        title: "Reunião:",
-        text: "Em até 30 minutos, alinhamos todas as informações do seu projeto para darmos início ao desenho.",
+
+        srcIcon: icon2,
+        altIcon: 'icon2',
+        title: "2.Reunião:",
+        text: "Nosso momento de nós conhecer e alinhar as expectativas da sua nova marca.",
     },
     {
-        title: "Estudo do projeto:",
-        text: "Reunimos todas as informações passadas por você, e iniciamos o brandstorm de possibilidades.",
+        srcIcon: icon3,
+        altIcon: 'icon3',
+        title: "3.Estudo do projeto:",
+        text: "É aqui que a nossa equipe criativa entra em ação e vamos fazer um brandstorm para início do desenho.",
     },
     {
-        title: "Desenho:",
-        text: "É aqui que nossa equipe de artistas entram em ação e a identidade visual começa a tomar forma.",
+        srcIcon: icon4,
+        altIcon: 'icon4',
+        title: "4.Desenho:",
+        text: "Nossa equipe de artistas, desenha seu projeto a mão livre com base nas informações coletadas anteriormente.",
     },
     {
-        title: "Aprovação:",
+        srcIcon: icon5,
+        altIcon: 'icon5',
+        title: "5.Aprovação:",
         text: "O momento mais esperado, enviamos para você a logo, tipografia, cores e pattern para aprovação.",
     },
     {
-        title: "Fechamento do projeto:",
+        srcIcon: icon6,
+        altIcon: 'icon6',
+        title: "6.Fechamento do projeto:",
         text: "Com o projeto aprovado, finalizamos a apresentação da marca assim como os demais materiais.",
-    },
-    {
-        title: "Entrega",
-        text: "É nesse momento que você recebe e pode começar a usar.",
-    },
+    }
 ]

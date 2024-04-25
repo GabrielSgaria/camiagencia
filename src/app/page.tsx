@@ -17,6 +17,7 @@ import { motion, useAnimation, useInView } from "framer-motion";
 import { WhatsappLogo } from "@phosphor-icons/react";
 import { ButtonWhatsAppFixed } from "@/components/button-whatsapp-fixed";
 import { AccordionQuestions } from "@/components/accordion-questions";
+import { imageDepositions } from "@/lib/depositions";
 
 
 export default function Home() {
@@ -93,7 +94,7 @@ export default function Home() {
         <div className="flex flex-col-reverse lg:flex-row items-center h-[430px] sm:h-[650px] lg:h-[400px] sm:gap-2 justify-between">
           <div className="sm:h-full w-full items-center sm:items-start justify-center flex flex-col sm:mt-96 lg:mt-0">
             <div className="flex flex-col relative pb-6">
-              <span className="text-xl text-center sm:text-start sm:text-3xl text-emerald-800 sm:max-w-[500px] w-full font-semibold">
+              <span className="text-xl sm:text-3xl text-center sm:text-start  text-emerald-800 sm:max-w-[500px] w-full font-semibold">
                 Quer atrair mais paciente e
                 melhorar seu posicionamento?
               </span>
@@ -160,7 +161,7 @@ export default function Home() {
                 "Olá! Vim através do site da Cami Agência Criativa."
               )
             }
-            className="sm:py-5 sm:px-10 py-2 rounded-2xl bg-verdeCami font-bold text-xl">
+            className="sm:py-5 sm:px-10 py-2 px-3 rounded-2xl bg-verdeCami font-bold text-xl">
             Quero fazer minha identidade visual
           </button>
           <div className="flex flex-col gap-0 justify-center items-center my-4">
@@ -197,9 +198,8 @@ export default function Home() {
             initial={{ opacity: 0, y: -30, scale: 0.7 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             transition={{ duration: 0.3 }}
-            className="text-pretoCami w-full sm:w-11/12 h-full rounded-3xl text-center sm:text-start flex items-center max-w-[750px] gap-10">
-
-            <div className="min-w-20 max-w-20 sm:min-w-72 sm:max-w-72">
+            className="text-pretoCami w-full sm:w-11/12 h-full rounded-3xl py-3 sm:px-5 text-center sm:text-start flex sm:flex-row flex-col items-center">
+            <div className="w-11/12 sm:min-w-72 sm:max-w-72 sm:mr-10">
               <Image
                 width={900}
                 height={900}
@@ -220,14 +220,14 @@ export default function Home() {
         </div>
         <div className="flex flex-col">
           <div className="relative py-20">
-            <div className="w-[180px] sm:w-[350px] lg:w-[550px] h-16 bg-marromCami rounded-r-full absolute left-0">
+            <div className="w-[150px] sm:w-[350px] lg:w-[550px] h-16 bg-marromCami rounded-r-full absolute left-0">
               <div className="flex items-center justify-center h-full">
                 <p className="text-base sm:text-2xl lg:text-3xl font-bold text-brancoCami text-start pl-2">
                   Cami, e se eu não gostar?
                 </p>
               </div>
             </div>
-            <div className="w-[180px] sm:w-[350px] lg:w-[550px] h-16 bg-marromCami rounded-l-full absolute right-0">
+            <div className="w-[150px] sm:w-[350px] lg:w-[550px] h-16 bg-marromCami rounded-l-full absolute right-0">
               <div className="flex items-center justify-center h-full">
                 <p className="text-base sm:text-2xl lg:text-3xl font-bold text-brancoCami text-end pr-2">
                   Tenho pressa, e agora?
@@ -235,7 +235,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="container mx-auto flex flex-row justify-between sm:gap-10 lg:gap-0 px-0 mt-5 items-start">
+          <div className="container mx-auto flex flex-row justify-between sm:gap-10 lg:gap-0 px-1 gap-10 mt-5 items-start">
             <div className="w-full sm:w-[350px] lg:w-[450px] text-base pl-2 sm:pl-0 sm:text-2xl lg:text-3xl font-bold text-verdeCami space-y-9">
               Sem problemas, é normal!
               Alteramos até 3x para que você tenha uma marca única e que se identifique!
@@ -264,24 +264,24 @@ export default function Home() {
                 "Olá! Vim através do site da Cami Agência Criativa."
               )
             }
-            className="sm:py-5 sm:px-10 pb-2 rounded-2xl bg-verdeCami font-bold text-xl text-brancoCami">
+            className="sm:py-5 sm:px-10 px-3 pb-2 rounded-2xl bg-verdeCami font-bold text-xl sm:text-3xl text-brancoCami">
             Quero fazer minha identidade visual
           </button>
         </div>
 
         <section className='w-full py-24 bg-white'>
-          <div className='container mx-auto flex'>
+          <div className='container mx-auto flex px-1 sm:px-8'>
             <div className="flex flex-col gap-3 items-center mb-10">
-              <h3 className="w-full text-center font-bold text-4xl">Conheça o nosso portfólio</h3>
-              <p className="text-cinzaCami text-2xl w-full text-center mb-10">Com mais de 1000 projetos entregues</p>
+              <h3 className="w-full text-center font-bold text-3xl sm:text-4xl ">Conheça o nosso portfólio</h3>
+              <p className="text-cinzaCami text-xl sm:text-2xl w-full text-center mb-10">Com mais de 1000 projetos entregues</p>
 
               <div className="grid grid-flow-row grid-cols-2 gap-3 lg:grid-cols-3 lg:gap-x-10 lg:gap-y-3 ">
-                <iframe src="https://www.behance.net/embed/project/195815305?ilo0=1" allow="clipboard-write" className="h-[250px] w-[200px] sm:h-[250px] sm:w-[380px]"></iframe>
-                <iframe src="https://www.behance.net/embed/project/195768507?ilo0=1" allow="clipboard-write" className="h-[250px] w-[200px] sm:h-[250px] sm:w-[380px]"></iframe>
-                <iframe src="https://www.behance.net/embed/project/195767913?ilo0=1" allow="clipboard-write" className="h-[250px] w-[200px] sm:h-[250px] sm:w-[380px]"></iframe>
-                <iframe src="https://www.behance.net/embed/project/195766743?ilo0=1" allow="clipboard-write" className="h-[250px] w-[200px] sm:h-[250px] sm:w-[380px]"></iframe>
-                <iframe src="https://www.behance.net/embed/project/195765751?ilo0=1" allow="clipboard-write" className="h-[250px] w-[200px] sm:h-[250px] sm:w-[380px]"></iframe>
-                <iframe src="https://www.behance.net/embed/project/195765303?ilo0=1" allow="clipboard-write" className="h-[250px] w-[200px] sm:h-[250px] sm:w-[380px]"></iframe>
+                <iframe src="https://www.behance.net/embed/project/195815305?ilo0=1" allow="clipboard-write" className="h-[250px] w-[160px] md:h-[250px] md:w-[380px]"></iframe>
+                <iframe src="https://www.behance.net/embed/project/195768507?ilo0=1" allow="clipboard-write" className="h-[250px] w-[160px] md:h-[250px] md:w-[380px]"></iframe>
+                <iframe src="https://www.behance.net/embed/project/195767913?ilo0=1" allow="clipboard-write" className="h-[250px] w-[160px] md:h-[250px] md:w-[380px]"></iframe>
+                <iframe src="https://www.behance.net/embed/project/195766743?ilo0=1" allow="clipboard-write" className="h-[250px] w-[160px] md:h-[250px] md:w-[380px]"></iframe>
+                <iframe src="https://www.behance.net/embed/project/195765751?ilo0=1" allow="clipboard-write" className="h-[250px] w-[160px] md:h-[250px] md:w-[380px]"></iframe>
+                <iframe src="https://www.behance.net/embed/project/195765303?ilo0=1" allow="clipboard-write" className="h-[250px] w-[160px] md:h-[250px] md:w-[380px]"></iframe>
                 <iframe src="https://www.behance.net/embed/project/195764189?ilo0=1" allow="clipboard-write" className="hidden sm:flex sm:h-[250px] sm:w-[380px]"></iframe>
                 <iframe src="https://www.behance.net/embed/project/195736415?ilo0=1" allow="clipboard-write" className="hidden sm:flex sm:h-[250px] sm:w-[380px]"></iframe>
                 <iframe src="https://www.behance.net/embed/project/195766299?ilo0=1" allow="clipboard-write" className="hidden sm:flex sm:h-[250px] sm:w-[380px]"></iframe>
@@ -300,24 +300,37 @@ export default function Home() {
       <section className="bg-pretoCami py-24">
         <div className="container mx-auto flex flex-col">
           <div className="items-center flex flex-col">
-            <h1 className="font-bold text-4xl text-brancoCami" >A praticidade é o nosso lema.</h1>
-            <p className="font-normal text-3xl text-brancoCami" >E não somos nós que estamos falando...</p>
+            <h1 className="font-bold text-2xl sm:text-3xl text-brancoCami text-center sm:text-start" >A praticidade é o nosso lema.</h1>
+            <p className="font-normal text-xl sm:text-2xl text-brancoCami text-center sm:text-start" >E não somos nós que estamos falando...</p>
+          </div>
+          <div className="flex sm:flex-row flex-col gap-3 mt-10">
+            {imageDepositions.map((imageDepositions, index) => (
+              <div key={index} className="rounded-2xl overflow-hidden w-full h-full">
+                <Image
+                  width={900}
+                  height={900}
+                  src={imageDepositions.src}
+                  alt={imageDepositions.alt}
+                />
+              </div>
+            ))}
+
           </div>
         </div>
       </section>
       <section className="py-24 bg-azulCami">
         <div className="container mx-auto flex justify-center">
           <div className="items-center flex flex-col">
-            <h1 className="font-bold text-4xl text-brancoCami" >Conheça os idealizadores</h1>
-            <p className="font-normal text-3xl text-brancoCami" >da Agência Criativa</p>
+            <h1 className="font-bold text-4xl text-brancoCami text-center sm:text-start" >Conheça os idealizadores</h1>
+            <p className="font-normal text-3xl text-brancoCami text-center sm:text-start" >da Agência Criativa</p>
           </div>
         </div>
-        <div className="flex flex-row justify-around">
-          <div className="w-[600px] h-[250px] flex items-center mt-10 relative shadow-2xl">
-            <div className="max-w-[253px]">
-              <Image width={900} height={900} src='/image/prancheta4.png' alt="Image Igor" className="rounded-l-2xl overflow-hidden" />
+        <div className="flex lg:flex-row flex-col gap-20 lg:justify-around items-center justify-center mt-10 sm:mt-0">
+          <div className="h-[533px] lg:w-[600px] lg:h-[250px] flex items-center sm:mt-10 relative shadow-2xl">
+            <div className="max-w-[253px] h-full">
+              <Image width={900} height={900} src='/image/prancheta4.png' alt="Image Igor" className="sm:rounded-l-2xl overflow-hidden" />
             </div>
-            <div className="bg-pretoCami/85 w-[347px] h-[203.5px] p-5 absolute right-0 bottom-0 rounded-br-2xl">
+            <div className="bg-pretoCami/85 lg:w-[347px] lg:h-[203.5px] p-5 absolute sm:right-0 bottom-0 rounded-br-2xl">
               <h1 className="text-brancoCami font-bold text-xl">
                 Igor Bittencourt
               </h1>
@@ -328,11 +341,11 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="w-[600px] h-[250px] flex items-center mt-10 relative shadow-2xl">
-            <div className="max-w-[253px]">
-              <Image width={900} height={900} src='/image/prancheta5.png' alt="Image Igor" className="rounded-l-2xl overflow-hidden" />
+          <div className="h-[533px] lg:w-[600px] lg:h-[250px] flex items-center sm:mt-10 relative shadow-2xl">
+            <div className="max-w-[253px] h-full">
+              <Image width={900} height={900} src='/image/prancheta5.png' alt="Image Igor" className="sm:rounded-l-2xl overflow-hidden" />
             </div>
-            <div className="bg-pretoCami/85 w-[347px] h-[203.5px] p-5 absolute right-0 bottom-0 rounded-br-2xl">
+            <div className="bg-pretoCami/85 lg:w-[347px] lg:h-[203.5px] p-5 absolute right-0 bottom-0 rounded-br-2xl">
               <h1 className="text-brancoCami font-bold text-xl">
                 Igor Bittencourt
               </h1>
@@ -346,13 +359,13 @@ export default function Home() {
         </div>
       </section>
       <section className="py-24 bg-brancoCami">
-        <div className="container mx-auto flex justify-between px-0">
-          <div className="w-80 flex flex-col gap-10">
-            <div className="text-pretoCami font-bold text-4xl">
+        <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center gap-10 sm:justify-between px-0">
+          <div className="w-80 flex flex-col gap-5 sm:gap-10">
+            <div className="text-pretoCami font-bold text-3xl sm:text-4xl text-center sm:text-start">
               <h1>Perguntas</h1>
               <h1>Frequentes</h1>
             </div>
-            <p className="text-pretoCami/80">
+            <p className="text-pretoCami/80 text-justify sm:text-start">
               Se tiver qualquer outra pergunta,
               por favor, entre em contato através do WhatsApp:
             </p>

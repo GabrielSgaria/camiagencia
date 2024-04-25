@@ -1,8 +1,8 @@
 import icon1 from '../../public/image/icons/1.png'
 import icon2 from '../../public/image/icons/2.png'
-import icon3 from '../../public/image/icons/3.png'
-import icon4 from '../../public/image/icons/4.png'
-import icon5 from '../../public/image/icons/5.png'
+import icon4 from '../../public/image/icons/3.png'
+import icon5 from '../../public/image/icons/4.png'
+import icon3 from '../../public/image/icons/5.png'
 import icon6 from '../../public/image/icons/6.png'
 
 

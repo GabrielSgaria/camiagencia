@@ -252,7 +252,7 @@ export default function Home() {
         initial={{ opacity: 0, y: -30, scale: 0.7 }}
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ duration: 0.3 }}
-        className="bg-zinc-50">
+        className="bg-white">
         {isClient && (windowSize.width <= 768 ? <CardPlansMobile /> : <CardPlansDesktop />)}
         <div className="container mx-auto flex justify-center mt-10 ">
 
@@ -270,7 +270,7 @@ export default function Home() {
         </div>
 
         <section className='w-full py-24 bg-white'>
-          <div className='container mx-auto flex px-1 sm:px-8'>
+          <div className='container mx-auto flex px-1 sm:px-8 items-center justify-center'>
             <div className="flex flex-col gap-3 items-center mb-10">
               <h3 className="w-full text-center font-bold text-3xl sm:text-4xl ">Conheça o nosso portfólio</h3>
               <p className="text-cinzaCami text-xl sm:text-2xl w-full text-center mb-10">Com mais de 1000 projetos entregues</p>
@@ -358,7 +358,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="py-24 bg-brancoCami">
+      <section className="py-24 bg-white">
         <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center gap-10 sm:justify-between px-0">
           <div className="w-80 flex flex-col gap-5 sm:gap-10">
             <div className="text-pretoCami font-bold text-3xl sm:text-4xl text-center sm:text-start">

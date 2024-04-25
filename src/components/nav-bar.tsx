@@ -75,16 +75,16 @@ export function NavBar() {
                                     Quem somos?
                                 </button>
                                 <button className="h-10 hover:bg-marromCami/35 rounded-xl transition-all duration-200 text-marromCami font-semibold text-lg uppercase px-2"
+                                    onClick={() => scrollToSection("services")}>
+                                    7 Passos
+                                </button>
+                                <button className="h-10 hover:bg-marromCami/35 rounded-xl transition-all duration-200 text-marromCami font-semibold text-lg uppercase px-2"
                                     onClick={() => scrollToSection("portfolio")}>
                                     Portfólio
                                 </button>
                                 <button className="h-10 hover:bg-marromCami/35 rounded-xl transition-all duration-200 text-marromCami font-semibold text-lg uppercase px-2"
-                                    onClick={() => scrollToSection("services")}>
-                                    Outros serviços
-                                </button>
-                                <button className="h-10 hover:bg-marromCami/35 rounded-xl transition-all duration-200 text-marromCami font-semibold text-lg uppercase px-2"
-                                    onClick={() => scrollToSection("contents")}>
-                                    Conteúdos
+                                    onClick={() => scrollToSection("questions")}>
+                                    Perguntas frequentes
                                 </button>
 
                             </div>

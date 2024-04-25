@@ -146,13 +146,13 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex items-center justify-center bg-zinc-800 h-[500px] mt-10">
+      <section className="flex items-center justify-center bg-zinc-800 h-[500px] mt-10" id="about">
         <span className="text-brancoCami text-6xl">video</span>
       </section>
 
 
 
-      <section className="pt-16" id="jobs">
+      <section className="pt-16" id="services">
         <div className="container mx-auto flex flex-col text-brancoCami justify-center items-center gap-8" >
           <button
             onClick={() =>
@@ -269,7 +269,7 @@ export default function Home() {
           </button>
         </div>
 
-        <section className='w-full py-24 bg-white'>
+        <section className='w-full py-24 bg-white' id="portfolio">
           <div className='container mx-auto flex px-1 sm:px-8 items-center justify-center'>
             <div className="flex flex-col gap-3 items-center mb-10">
               <h3 className="w-full text-center font-bold text-3xl sm:text-4xl ">Conheça o nosso portfólio</h3>
@@ -358,7 +358,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-white" id="questions">
         <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center gap-10 sm:justify-between px-0">
           <div className="w-80 flex flex-col gap-5 sm:gap-10">
             <div className="text-pretoCami font-bold text-3xl sm:text-4xl text-center sm:text-start">

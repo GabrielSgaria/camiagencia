@@ -11,10 +11,8 @@ import { CardPlansDesktop, } from "@/components/card-plans-desktop";
 import { CardPlansMobile } from "@/components/card-plans-mobile";
 import { useEffect, useRef, useState } from "react";
 import { CardComparsion } from "@/components/card-comparsion";
-import { CarrouselJobs } from "@/components/carrousel-jobs";
 import { Footer } from "@/components/footer";
 import { motion, useAnimation, useInView } from "framer-motion";
-import { WhatsappLogo } from "@phosphor-icons/react";
 import { ButtonWhatsAppFixed } from "@/components/button-whatsapp-fixed";
 import { AccordionQuestions } from "@/components/accordion-questions";
 import { imageDepositions } from "@/lib/depositions";
@@ -161,7 +159,7 @@ export default function Home() {
                 "Olá! Vim através do site da Cami Agência Criativa."
               )
             }
-            className="sm:py-5 sm:px-10 py-2 px-3 rounded-2xl bg-verdeCami font-bold text-xl">
+            className="sm:py-5 sm:px-10 px-3 pb-2 rounded-2xl bg-verdeCami hover:bg-verdeCami/90 font-bold text-xl sm:text-3xl text-brancoCami transition-all">
             Quero fazer minha identidade visual
           </button>
           <div className="flex flex-col gap-0 justify-center items-center my-4">
@@ -264,7 +262,7 @@ export default function Home() {
                 "Olá! Vim através do site da Cami Agência Criativa."
               )
             }
-            className="sm:py-5 sm:px-10 px-3 pb-2 rounded-2xl bg-verdeCami font-bold text-xl sm:text-3xl text-brancoCami">
+            className="sm:py-5 sm:px-10 px-3 pb-2 rounded-2xl bg-verdeCami hover:bg-verdeCami/90 font-bold text-xl sm:text-3xl text-brancoCami transition-all">
             Quero fazer minha identidade visual
           </button>
         </div>

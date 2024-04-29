@@ -301,9 +301,9 @@ export default function Home() {
             <h1 className="font-bold text-2xl sm:text-3xl text-brancoCami text-center sm:text-start" >A praticidade é o nosso lema.</h1>
             <p className="font-normal text-xl sm:text-2xl text-brancoCami text-center sm:text-start" >E não somos nós que estamos falando...</p>
           </div>
-          <div className="flex sm:flex-row flex-col gap-3 mt-10">
+          <div className="columns-4 gap-6 mt-10">
             {imageDepositions.map((imageDepositions, index) => (
-              <div key={index} className="rounded-2xl overflow-hidden w-full h-full">
+              <div key={index} className="rounded-2xl overflow-hidden w-full my-3">
                 <Image
                   width={900}
                   height={900}

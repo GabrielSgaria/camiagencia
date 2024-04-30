@@ -11,16 +11,16 @@ import dep10 from '../../public/image/depositions/10.jpeg';
 import dep11 from '../../public/image/depositions/11.jpeg';
 import dep12 from '../../public/image/depositions/12.jpeg';
 import dep13 from '../../public/image/depositions/13.jpeg';
-import dep14 from '../../public/image/depositions/14.png';
-import dep15 from '../../public/image/depositions/15.png';
-import dep16 from '../../public/image/depositions/16.png';
-import dep17 from '../../public/image/depositions/17.png';
-import dep18 from '../../public/image/depositions/18.png';
-import dep19 from '../../public/image/depositions/19.png';
-import dep20 from '../../public/image/depositions/20.png';
-import dep21 from '../../public/image/depositions/21.png';
-import dep22 from '../../public/image/depositions/22.png';
-import dep23 from '../../public/image/depositions/23.png';
+import dep14 from '../../public/image/depositions/14.jpeg';
+import dep15 from '../../public/image/depositions/15.jpeg';
+import dep16 from '../../public/image/depositions/16.jpeg';
+import dep17 from '../../public/image/depositions/17.jpeg';
+import dep18 from '../../public/image/depositions/18.jpeg';
+import dep19 from '../../public/image/depositions/19.jpeg';
+import dep20 from '../../public/image/depositions/20.jpeg';
+import dep21 from '../../public/image/depositions/21.jpeg';
+import dep22 from '../../public/image/depositions/22.jpeg';
+import dep23 from '../../public/image/depositions/23.jpeg';
 
 export const imageDepositions = [
     { src: dep1, alt: 'Depoimento 1' },

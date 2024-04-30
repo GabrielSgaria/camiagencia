@@ -144,11 +144,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex items-center justify-center bg-zinc-800 h-[250px] sm:h-[400px] lg:h-[600px] mt-10" id="about">
-       <VideoPlayer src="https://media.graphassets.com/Gbe1sMPdSKiEm1NG8TSP" />
+      <section className="flex items-center justify-center h-[250px] sm:h-[400px] lg:h-[600px] w-full mt-10" id="about">
+        <VideoPlayer src="https://media.graphassets.com/Gbe1sMPdSKiEm1NG8TSP" />
       </section>
-
-
 
       <section className="pt-16" id="services">
         <div className="container mx-auto flex flex-col text-brancoCami justify-center items-center gap-8" >
@@ -159,7 +157,7 @@ export default function Home() {
                 "Olá! Vim através do site da Cami Agência Criativa."
               )
             }
-            className="sm:py-5 sm:px-10 px-3 pb-2 rounded-2xl bg-verdeCami hover:bg-verdeCami/90 font-bold text-xl sm:text-3xl text-brancoCami transition-all">
+            className="sm:py-5 sm:px-10 px-3 py-2 rounded-2xl bg-verdeCami hover:bg-verdeCami/90 font-bold text-base sm:text-3xl text-brancoCami transition-all justify-center text-center">
             Quero fazer minha identidade visual
           </button>
           <div className="flex flex-col gap-0 justify-center items-center my-4">
@@ -262,7 +260,7 @@ export default function Home() {
                 "Olá! Vim através do site da Cami Agência Criativa."
               )
             }
-            className="sm:py-5 sm:px-10 px-3 pb-2 rounded-2xl bg-verdeCami hover:bg-verdeCami/90 font-bold text-xl sm:text-3xl text-brancoCami transition-all">
+            className="sm:py-5 sm:px-10 px-3 py-2 rounded-2xl bg-verdeCami hover:bg-verdeCami/90 font-bold text-base sm:text-3xl text-brancoCami transition-all">
             Quero fazer minha identidade visual
           </button>
         </div>
@@ -288,20 +286,31 @@ export default function Home() {
           </div>
 
         </section>
-        <CardComparsion />
+        <section className="container mx-auto flex items-center justify-center">
+          <div className="w-full items-center justify-center">
+            <Image
+              width={900}
+              height={900}
+              src='/image/comparsion.png'
+              alt="image comparsion"
+              className="w-full"
+              
+            />
+          </div>
+        </section>
       </motion.div>
       <section className="py-24 bg-white">
         <div className="container mx-auto flex justify-center ">
           <Image width={900} height={900} src='/image/prancheta1.png' alt="Foto" className="shadow-2xl rounded-b-[40px]" />
         </div>
       </section>
-      <section className="bg-pretoCami py-24">
+      <section className="bg-white pb-10">
         <div className="container mx-auto flex flex-col">
           <div className="items-center flex flex-col">
-            <h1 className="font-bold text-2xl sm:text-3xl text-brancoCami text-center sm:text-start" >A praticidade é o nosso lema.</h1>
-            <p className="font-normal text-xl sm:text-2xl text-brancoCami text-center sm:text-start" >E não somos nós que estamos falando...</p>
+            <h1 className="font-bold text-2xl sm:text-3xl text-pretoCami text-center sm:text-start" >A praticidade é o nosso lema.</h1>
+            <p className="font-normal text-xl sm:text-2xl text-pretoCami text-center sm:text-start" >E não somos nós que estamos falando...</p>
           </div>
-          <div className="columns-4 gap-6 mt-10">
+          <div className="columns-2  md:columns-4 mdgap-6 mt-10">
             {imageDepositions.map((imageDepositions, index) => (
               <div key={index} className="rounded-2xl overflow-hidden w-full my-3">
                 <Image

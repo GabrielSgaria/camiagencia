@@ -308,7 +308,7 @@ export default function Home() {
         <div className="container mx-auto flex flex-col">
           <div className="items-center flex flex-col">
             <h1 className="font-bold text-base sm:text-3xl text-pretoCami text-center sm:text-start" >A praticidade é o nosso lema.</h1>
-            <p className="font-normal text-lg sm:text-2xl text-pretoCami text-center sm:text-start" >E não somos nós que estamos falando...</p>
+            <p className="font-normal text-base sm:text-2xl text-pretoCami text-center sm:text-start" >E não somos nós que estamos falando...</p>
           </div>
           <div className="columns-2  md:columns-4 mdgap-6 mt-10">
             {imageDepositions.map((imageDepositions, index) => (

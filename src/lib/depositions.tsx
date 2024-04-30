@@ -22,8 +22,6 @@ import dep21 from '../../public/image/depositions/21.png';
 import dep22 from '../../public/image/depositions/22.png';
 import dep23 from '../../public/image/depositions/23.png';
 
-
-
 export const imageDepositions = [
     { src: dep1, alt: 'Depoimento 1' },
     { src: dep2, alt: 'Depoimento 2' },

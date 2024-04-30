@@ -16,6 +16,7 @@ import { motion, useAnimation, useInView } from "framer-motion";
 import { ButtonWhatsAppFixed } from "@/components/button-whatsapp-fixed";
 import { AccordionQuestions } from "@/components/accordion-questions";
 import { imageDepositions } from "@/lib/depositions";
+import { VideoPlayer } from "@/components/vdo";
 
 
 export default function Home() {
@@ -27,7 +28,6 @@ export default function Home() {
   });
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-
   const mainControls = useAnimation();
 
   useEffect(() => {
@@ -144,8 +144,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex items-center justify-center bg-zinc-800 h-[500px] mt-10" id="about">
-        <span className="text-brancoCami text-6xl">video</span>
+      <section className="flex items-center justify-center bg-zinc-800 h-[250px] sm:h-[400px] lg:h-[600px] mt-10" id="about">
+       <VideoPlayer src="https://media.graphassets.com/Gbe1sMPdSKiEm1NG8TSP" />
       </section>
 
 

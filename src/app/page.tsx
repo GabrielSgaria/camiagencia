@@ -161,8 +161,8 @@ export default function Home() {
             Quero fazer minha identidade visual
           </button>
           <div className="flex flex-col gap-0 justify-center items-center my-4">
-            <h1 className="font-bold text-marromCami sm:text-3xl text-xl text-center">Criamos a sua marca através de um metódo compravado de 7 passos.</h1>
-            <h1 className="font-bold text-marromCami sm:text-3xl text-xl text-center">Onde você participa de todo o processo.</h1>
+            <h1 className="font-bold text-marromCami sm:text-3xl text-base text-center">Criamos a sua marca através de um metódo compravado de 7 passos.</h1>
+            <h1 className="font-bold text-marromCami sm:text-3xl text-base text-center">Onde você participa de todo o processo.</h1>
 
           </div>
 
@@ -307,8 +307,8 @@ export default function Home() {
       <section className="bg-white pb-10">
         <div className="container mx-auto flex flex-col">
           <div className="items-center flex flex-col">
-            <h1 className="font-bold text-2xl sm:text-3xl text-pretoCami text-center sm:text-start" >A praticidade é o nosso lema.</h1>
-            <p className="font-normal text-xl sm:text-2xl text-pretoCami text-center sm:text-start" >E não somos nós que estamos falando...</p>
+            <h1 className="font-bold text-base sm:text-3xl text-pretoCami text-center sm:text-start" >A praticidade é o nosso lema.</h1>
+            <p className="font-normal text-lg sm:text-2xl text-pretoCami text-center sm:text-start" >E não somos nós que estamos falando...</p>
           </div>
           <div className="columns-2  md:columns-4 mdgap-6 mt-10">
             {imageDepositions.map((imageDepositions, index) => (

@@ -22,7 +22,7 @@ export function CardPassos({ tituloCardPassos, textoCardPassos, srcIcon, altIcon
             </div>
             <div >
 
-                <h1 className="font-bold text-azulCami text-xl sm:text-xl">
+                <h1 className="font-bold text-azulCami text-xl sm:text-xl text-start mx-2">
                     {tituloCardPassos}
                 </h1>
                 <p className="font-bold text-azulCami text-base sm:text-lg text-justify mx-2">

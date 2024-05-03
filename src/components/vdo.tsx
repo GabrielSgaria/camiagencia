@@ -1,5 +1,5 @@
 import { useInView } from 'framer-motion';
-import React, { useRef, useEffect, useState } from 'react';
+import React, { useRef, useEffect } from 'react';
 
 interface VideoPlayerProps {
     src: string;
@@ -7,17 +7,20 @@ interface VideoPlayerProps {
 
 export function VideoPlayer({ src }: VideoPlayerProps) {
     const videoRef = useRef<HTMLVideoElement | null>(null);
-    // const isInView = useInView(videoRef, { once: true });
+    const isInView = useInView(videoRef, { once: true });
 
-    // useEffect(() => {
-    //     if (isInView) {
-    //         videoRef.current?.play();
-    //     }
-    // }, [isInView]);
+    useEffect(() => {
+        if (isInView) {
+            videoRef.current?.play();
+        } else {
+            videoRef.current?.pause(); 
+        }
+    }, [isInView]);
 
     return (
-        <video ref={videoRef} controls autoPlay preload="auto" className="w-full h-full">
+        <video ref={videoRef} controls preload="auto" className="w-full h-full">
             <source src={src} type="video/mp4" />
         </video>
     );
 }
+

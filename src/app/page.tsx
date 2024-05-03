@@ -294,7 +294,7 @@ export default function Home() {
               src='/image/comparsion.png'
               alt="image comparsion"
               className="w-full"
-              
+
             />
           </div>
         </section>
@@ -332,41 +332,40 @@ export default function Home() {
             <p className="font-normal text-3xl text-brancoCami text-center sm:text-start" >da Agência Criativa</p>
           </div>
         </div>
-        <div className="flex lg:flex-row flex-col gap-20 lg:justify-around items-center justify-center mt-10 sm:mt-0">
-          <div className="h-[533px] lg:w-[600px] lg:h-[250px] flex items-center sm:mt-10 relative shadow-2xl">
+        <div className="flex lg:flex-row flex-col gap-2 lg:justify-around items-center justify-center mt-10 sm:mt-0">
+          <div className="h-[458px] lg:w-[650px] lg:h-[250px] flex items-center sm:mt-10 relative shadow-2xl">
             <div className="max-w-[253px] h-full">
               <Image width={900} height={900} src='/image/prancheta4.png' alt="Image Igor" className="sm:rounded-l-2xl overflow-hidden" />
             </div>
-            <div className="bg-pretoCami/85 lg:w-[347px] lg:h-[203.5px] p-5 absolute sm:right-0 bottom-0 rounded-br-2xl">
+            <div className="bg-pretoCami/85 lg:w-[397px] lg:h-[203.5px] p-5 lg:px-5 lg:pt-2 absolute sm:right-0 bottom-0 rounded-br-2xl">
               <h1 className="text-brancoCami font-bold text-xl">
                 Igor Bittencourt
               </h1>
-              <p className="text-brancoCami/90 font-normal">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laborum, quaerat non deleniti pariatur aperiam numquam voluptate saepe adipisci!
-                Eius quos modi corrupti fugit consectetur reiciendis harum atque id necessitatibus ipsam.
+              <p className="text-brancoCami/90 font-normal text-sm">
+                Especialista em Tráfego Pago e Empreendedor, Igor Bittencourt é sócio e responsável por aumentar o faturamento em 17x, 
+                de clientes dentro e fora do Brasil. Nas horas vagas designer e filmmaker.
               </p>
             </div>
           </div>
-          <div className="h-[533px] lg:w-[600px] lg:h-[250px] flex items-center sm:mt-10 relative shadow-2xl">
+          <div className="h-[598px] lg:w-[650px] lg:h-[250px] flex items-center sm:mt-10 relative shadow-2xl">
             <div className="max-w-[253px] h-full">
               <Image width={900} height={900} src='/image/prancheta5.png' alt="Image Igor" className="sm:rounded-l-2xl overflow-hidden" />
             </div>
-            <div className="bg-pretoCami/85 lg:w-[347px] lg:h-[203.5px] p-5 absolute right-0 bottom-0 rounded-br-2xl">
+            <div className="bg-pretoCami/85 lg:w-[397px] lg:h-[203.5px] p-5 lg:px-5 lg:pt-2 absolute right-0 bottom-0 rounded-br-2xl">
               <h1 className="text-brancoCami font-bold text-xl">
-                Igor Bittencourt
+                Camilla Bittencourt:
               </h1>
-              <p className="text-brancoCami/90 font-normal">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Laborum, quaerat non deleniti pariatur aperiam numquam voluptate saepe adipisci!
-                Eius quos modi corrupti fugit consectetur reiciendis harum atque id necessitatibus ipsam.
+              <p className="text-brancoCami/90 font-normal text-sm">
+              Publicitária e Empreendedora desde sempre, Camilla Bittencourt é fundadora da agência criativa, responsável 
+              por gerenciar toda a equipe e manter o padrão de qualidade de todos os projetos realizados. Movida pelo propósito de trazer um marketing fácil e acessível, 
+              vem fazendo história com a primeira agência do Brasil especializada em criação de marca para profissionais da saúde.
               </p>
             </div>
           </div>
         </div>
       </section>
-      <section className="py-24 bg-white" id="questions">
-        <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center gap-10 sm:justify-between px-0">
+      <section className="py-10 bg-white">
+        <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center gap-10 sm:justify-between px-0 lg:h-[800px]"  id="questions">
           <div className="w-80 flex flex-col gap-5 sm:gap-10">
             <div className="text-pretoCami font-bold text-3xl sm:text-4xl text-center sm:text-start">
               <h1>Perguntas</h1>

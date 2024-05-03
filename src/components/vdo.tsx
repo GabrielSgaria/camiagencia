@@ -9,7 +9,7 @@ export function VideoPlayer({ src }: VideoPlayerProps) {
     const videoRef = useRef<HTMLVideoElement | null>(null);
 
     return (
-        <video ref={videoRef} controls autoPlay muted preload="auto" className="w-full h-full  ">
+        <video ref={videoRef} controls autoPlay muted playsInline preload="auto" className="w-full h-full  ">
             <source src={src} type="video/mp4" />
         </video>
     )

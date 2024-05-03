@@ -144,7 +144,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex items-center justify-center h-[250px] sm:h-[400px] lg:h-[600px] w-full mt-10" id="about">
+      <section className="flex items-center justify-center h-[250px] sm:h-[400px] lg:h-[650px] lg:container lg:mx-auto mt-10" id="about">
         <VideoPlayer src="https://media.graphassets.com/Gbe1sMPdSKiEm1NG8TSP" />
       </section>
 

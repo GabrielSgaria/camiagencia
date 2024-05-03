@@ -145,7 +145,7 @@ export default function Home() {
         </div>
       </section>
       <section className="flex items-center justify-center h-[250px] sm:h-[400px] lg:h-[650px] lg:container lg:mx-auto mt-10" id="about">
-        <VideoPlayer src="https://media.graphassets.com/Gbe1sMPdSKiEm1NG8TSP" />
+        <VideoPlayer src="https://media.graphassets.com/Gbe1sMPdSKiEm1NG8TSP"/>
       </section>
 
       <section className="pt-16" id="services">

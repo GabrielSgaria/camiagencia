@@ -12,6 +12,6 @@ export function VideoPlayer({ src }: VideoPlayerProps) {
         <video ref={videoRef} controls autoPlay muted preload="auto" className="w-full h-full  ">
             <source src={src} type="video/mp4" />
         </video>
-    );
+    )
 }
 

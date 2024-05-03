@@ -27,7 +27,17 @@ export function VideoPlayer({ src }: VideoPlayerProps) {
     }, []);
 
     return (
-        <video ref={videoRef} controls preload="auto" className="w-full h-full">
+        <video
+            ref={videoRef}
+            controls
+            preload="auto"
+            className="w-full h-full"
+            onClick={() => {
+                if (videoRef.current) {
+                    videoRef.current.play();
+                }
+            }}
+        >
             <source src={src} type="video/mp4" />
         </video>
     );

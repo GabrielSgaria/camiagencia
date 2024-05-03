@@ -20,7 +20,7 @@ export function ButtonWhatsAppFixed() {
                     )
                 }
                 className="cursor-pointer p-3 bg-green-500 hover:bg-green-600 transition-all rounded-full shadow-md hover:shadow-2xl"><WhatsappLogo
-                    className="w-12 h-12 text-zinc-50 " /></button>
+                    className="w-12 h-12 text-zinc-50"/></button>
         </div>
     )
 }

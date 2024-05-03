@@ -7,12 +7,12 @@ export function AccordionQuestions() {
 
 
         <Accordion.Root
-            className="rounded-md w-11/12 lg:w-8/12  sm:mx-1 bg-azulCami text-neutral-100 shadow-2xl text-center"
+            className="rounded-md w-11/12 lg:w-8/12  sm:mx-1 bg-[#09524C] text-neutral-100 shadow-2xl text-center"
             type="single"
             collapsible
         >
             <Accordion.Item value="item-1">
-                <Accordion.Trigger className="AccordionTrigger flex flex-row justify-between w-full items-center p-4 border-y rounded-md border-solid border-azulCami">
+                <Accordion.Trigger className="AccordionTrigger flex flex-row justify-between w-full items-center p-4 border-y rounded-md border-solid border-[#09524C]">
                     <span className="font-black text-lg sm:text-xl w-full text-start">
                         Todas as logos são exclusivas, como funciona para realizar o registro de marca?
                     </span>
@@ -32,7 +32,7 @@ export function AccordionQuestions() {
             </Accordion.Item>
 
             <Accordion.Item value="item-2">
-                <Accordion.Trigger className="AccordionTrigger flex flex-row justify-between w-full items-center p-4 border-y rounded-md border-solid border-azulCami">
+                <Accordion.Trigger className="AccordionTrigger flex flex-row justify-between w-full items-center p-4 border-y rounded-md border-solid border-[#09524C]">
                     <span className="font-black text-lg sm:text-xl w-full text-start">
                         Qual o prazo para entrega do projeto?
                     </span>
@@ -51,7 +51,7 @@ export function AccordionQuestions() {
             </Accordion.Item>
 
             <Accordion.Item value="item-3">
-                <Accordion.Trigger className="AccordionTrigger  flex flex-row justify-between w-full items-center p-4 border-y rounded-md border-solid border-azulCami">
+                <Accordion.Trigger className="AccordionTrigger  flex flex-row justify-between w-full items-center p-4 border-y rounded-md border-solid border-[#09524C]">
                     <span className="font-black text-lg sm:text-xl w-full text-start">
                         Quais são as formas de pagamento? Emitem nota fiscal?
                     </span>
@@ -70,7 +70,7 @@ export function AccordionQuestions() {
             </Accordion.Item>
 
             <Accordion.Item value="item-4">
-                <Accordion.Trigger className="AccordionTrigger  flex flex-row justify-between w-full items-center p-4 border-y rounded-md border-solid border-azulCami">
+                <Accordion.Trigger className="AccordionTrigger  flex flex-row justify-between w-full items-center p-4 border-y rounded-md border-solid border-[#09524C]">
                     <span className="font-black text-lg sm:text-xl w-full text-start">
                         Os arquivos que recebo são editáveis?
                     </span>
@@ -91,7 +91,7 @@ export function AccordionQuestions() {
             </Accordion.Item>
 
             <Accordion.Item value="item-5">
-                <Accordion.Trigger className="AccordionTrigger  flex flex-row justify-between w-full items-center p-4 border-y rounded-md border-solid border-azulCami">
+                <Accordion.Trigger className="AccordionTrigger  flex flex-row justify-between w-full items-center p-4 border-y rounded-md border-solid border-[#09524C]">
                     <span className="font-black text-lg sm:text-xl w-full text-start">
                         Quem irá realizar o seu projeto?
                     </span>
@@ -110,7 +110,7 @@ export function AccordionQuestions() {
             </Accordion.Item>
 
             <Accordion.Item value="item-6">
-                <Accordion.Trigger className="AccordionTrigger  flex flex-row justify-between w-full items-center p-4 border-y rounded-md border-solid border-azulCami">
+                <Accordion.Trigger className="AccordionTrigger  flex flex-row justify-between w-full items-center p-4 border-y rounded-md border-solid border-[#09524C]">
                     <span className="font-black text-lg sm:text-xl w-full text-start">
                         Como é a primeira reunião?
                     </span>
@@ -129,7 +129,7 @@ export function AccordionQuestions() {
                 </Accordion.Content>
             </Accordion.Item>
             <Accordion.Item value="item-7">
-                <Accordion.Trigger className="AccordionTrigger  flex flex-row justify-between w-full items-center p-4 border-y rounded-md border-solid border-azulCami">
+                <Accordion.Trigger className="AccordionTrigger  flex flex-row justify-between w-full items-center p-4 border-y rounded-md border-solid border-[#09524C]">
                     <span className="font-black text-lg sm:text-xl w-full text-start">
                         Sobre a Cami
                     </span>

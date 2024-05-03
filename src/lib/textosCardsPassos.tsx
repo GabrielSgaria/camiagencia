@@ -13,7 +13,7 @@ export const texts = [
         srcIcon: icon1,
         altIcon: 'icon1',
         title: "1.Formulário:",
-        text: "É através dele que começamos a conhecer a sua história, com algumas perguntas sobre o que você gosta e sobre a sua área de atuação, reunimos algumas informações para conversamos na reunião",
+        text: "É através dele que começamos a conhecer a sua história, com algumas perguntas sobre o que você gosta e sobre a sua área de atuação, reunimos algumas informações para conversamos na reunião.",
     },
     {
 

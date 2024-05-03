@@ -7,15 +7,6 @@ import { motion } from 'framer-motion'
 
 export function NavBar() {
 
-    function sendMensage(numeroTelefone: number, mensagemPadrao: string) {
-        var linkWhatsApp =
-            "https://wa.me/" +
-            numeroTelefone +
-            "?text=" +
-            encodeURIComponent(mensagemPadrao);
-
-        window.open(linkWhatsApp, "_blank");
-    }
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const handleMenuToggle = () => {
@@ -76,7 +67,7 @@ export function NavBar() {
                                 </button>
                                 <button className="h-10 hover:bg-marromCami/35 rounded-xl transition-all duration-200 text-marromCami font-semibold text-lg uppercase px-2"
                                     onClick={() => scrollToSection("services")}>
-                                    7 Passos
+                                    Metodologia
                                 </button>
                                 <button className="h-10 hover:bg-marromCami/35 rounded-xl transition-all duration-200 text-marromCami font-semibold text-lg uppercase px-2"
                                     onClick={() => scrollToSection("portfolio")}>

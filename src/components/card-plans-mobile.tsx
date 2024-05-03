@@ -11,11 +11,11 @@ export function CardPlansMobile() {
                         <h1 className="text-center text-cinzaCami text-xl">Nossos Planos</h1>
                         <div className="flex flex-row w-full h-full justify-between">
 
-                            <div className="w-full h-full relative ml-10">
+                            <div className="w-full h-full relative ml-20">
 
                                 <div className="absolute left-0 bottom-0 h-full flex items-center">
                                     <div className="h-full flex flex-col items-center relative">
-                                        <div className="bg-gradient-to-t to-emerald-900 from-emerald-900/45 rounded-2xl w-9 h-[30%] absolute bottom-10 text-xs flex flex-col justify-center items-center text-brancoCami/60">
+                                        <div className="bg-gradient-to-t to-emerald-900 from-emerald-900/45 rounded-2xl w-14 h-[40%] absolute bottom-10 text-xs flex flex-col justify-center items-center text-brancoCami/60">
                                             <span>B</span>
                                             <span>A</span>
                                             <span>S</span>
@@ -27,23 +27,9 @@ export function CardPlansMobile() {
                                     </div>
                                 </div>
 
-                                <div className="absolute left-1/4 bottom-0 h-full flex flex-col gap-2 items-center">
+                                <div className="absolute left-[40%] bottom-0 h-full flex flex-col gap-2 items-center">
                                     <div className="h-full flex flex-col items-center relative">
-                                        <div className="bg-gradient-to-t to-emerald-900 from-emerald-900/45 rounded-2xl w-9 h-3/6 absolute bottom-10 flex flex-col justify-center items-center text-brancoCami/60">
-                                            <span>S</span>
-                                            <span>O</span>
-                                            <span>C</span>
-                                            <span>I</span>
-                                            <span>A</span>
-                                            <span>L</span>
-                                        </div>
-                                        <BookOpenText className="size-6 bottom-0 absolute text-emerald-900 animate-pulse" />
-                                    </div>
-                                </div>
-
-                                <div className="absolute left-2/4 bottom-0 h-full flex flex-col gap-2 items-center">
-                                    <div className="h-full flex flex-col items-center relative">
-                                        <div className="bg-gradient-to-t to-emerald-900 from-emerald-900/45 rounded-2xl w-9 h-[70%] absolute bottom-10 flex flex-col justify-center items-center text-brancoCami/60">
+                                        <div className="bg-gradient-to-t to-emerald-900 from-emerald-900/45 rounded-2xl w-14 h-[70%] absolute bottom-10 flex flex-col justify-center items-center text-brancoCami/60">
                                             <span>P</span>
                                             <span>A</span>
                                             <span>P</span>
@@ -58,9 +44,9 @@ export function CardPlansMobile() {
                                     </div>
                                 </div>
 
-                                <div className="absolute left-3/4 bottom-0 h-full flex flex-col gap-2 items-center">
+                                <div className="absolute right-[20%] bottom-0 h-full flex flex-col gap-2 items-center">
                                     <div className="h-full flex flex-col items-center relative">
-                                        <div className="bg-gradient-to-t to-emerald-900 from-emerald-900/45 rounded-2xl w-9 h-5/6 absolute bottom-10 flex flex-col justify-center items-center text-brancoCami/60">
+                                        <div className="bg-gradient-to-t to-emerald-900 from-emerald-900/45 rounded-2xl w-14 h-5/6 absolute bottom-10 flex flex-col justify-center items-center text-brancoCami/60">
                                             <span>C</span>
                                             <span>O</span>
                                             <span>M</span>
@@ -92,30 +78,18 @@ export function CardPlansMobile() {
                                 <span className="font-bold mr-1">
                                     Básico:
                                 </span>
-                                Conta com criação de
-                                uma logo, tipografia e Paleta de cores.
-                            </p>
-                            <p>
-                                <span className="font-bold mr-1">
-                                    Social:
-                                </span>
-                                Pacote Básico + Variaçao da logo e sublogo e 5 capas para destaque, 50 templates editáveis para feed e stories
+                                Logotipo exclusiva, tipografia e paleta de cores.
                             </p>
                             <p>
                                 <span className="font-bold mr-1">
                                     Papelaria:
                                 </span>
-
-                                Tudo do Básico, mais layouts para
-                                impressos, como: Cartao de visitas, receituario,
-                                timbrado de A4. Pattern Variação da logo e sublogo
+                                Todos os itens acima, além dos layouts: Cartão de visitas, receituário, timbrado e pasta A4.
                             </p>
 
                             <p>
                                 <span className="font-bold mr-1">Completo:</span>
-                                Tudo dos planos anteriores, mais
-                                50 templates para feed e 50 templates para Stories
-                                e 5 capas para destaques.
+                                Básico + Papelaria + 50 templates para feed e stories + 5 capas p/ destaque.
                             </p>
 
 

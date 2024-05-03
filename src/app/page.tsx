@@ -153,7 +153,7 @@ export default function Home() {
           <button
             onClick={() =>
               sendMensage(
-                554199769766,
+                554197514990,
                 "Olá! Vim através do site da Cami Agência Criativa."
               )
             }
@@ -256,7 +256,7 @@ export default function Home() {
           <button
             onClick={() =>
               sendMensage(
-                554199769766,
+                554197514990,
                 "Olá! Vim através do site da Cami Agência Criativa."
               )
             }
@@ -288,14 +288,24 @@ export default function Home() {
         </section>
         <section className="container mx-auto flex items-center justify-center">
           <div className="w-full items-center justify-center">
-            <Image
+          {isClient && (windowSize.width <= 768 ? <Image
+              width={900}
+              height={900}
+              src='/image/comparsion-mobile.png'
+              alt="image comparsion mobile"
+              className="w-full"
+
+            /> :
+          
+          <Image
               width={900}
               height={900}
               src='/image/comparsion.png'
               alt="image comparsion"
               className="w-full"
 
-            />
+            />)}
+            
           </div>
         </section>
       </motion.div>
@@ -353,7 +363,7 @@ export default function Home() {
             </div>
             <div className="bg-pretoCami/85 lg:w-[397px] lg:h-[203.5px] p-5 lg:px-5 lg:pt-2 absolute right-0 bottom-0 rounded-br-2xl">
               <h1 className="text-brancoCami font-bold text-xl">
-                Camilla Bittencourt:
+                Camilla Bittencourt
               </h1>
               <p className="text-brancoCami/90 font-normal text-sm">
               Publicitária e Empreendedora desde sempre, Camilla Bittencourt é fundadora da agência criativa, responsável 

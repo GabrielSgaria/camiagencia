@@ -10,7 +10,6 @@ import { texts } from "@/lib/textosCardsPassos";
 import { CardPlansDesktop, } from "@/components/card-plans-desktop";
 import { CardPlansMobile } from "@/components/card-plans-mobile";
 import { useEffect, useRef, useState } from "react";
-import { CardComparsion } from "@/components/card-comparsion";
 import { Footer } from "@/components/footer";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { ButtonWhatsAppFixed } from "@/components/button-whatsapp-fixed";
@@ -144,8 +143,10 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex items-center justify-center h-[250px] sm:h-[400px] lg:h-[650px] lg:container lg:mx-auto mt-10" id="about">
-        <VideoPlayer src="https://media.graphassets.com/Gbe1sMPdSKiEm1NG8TSP" />
+      <section className="flex items-center justify-center h-[250px] sm:h-[400px] lg:h-[594px] container mx-auto mt-10 relative px-0" id="about">
+        <VideoPlayer src="https://media.graphassets.com/ChxhkMSvSfObFUyTkwHK" />
+        <Image width={900} height={900} alt="Icon 1" src='/image/1.png' className="absolute left-0 -top-4 w-36 sm:top-0 md:w-36 lg:left-10 lg:w-60 md:top-1/3 z-50" />
+        <Image width={900} height={900} alt="Icon 1" src='/image/2.png' className="absolute right-0 w-36 -bottom-4 sm:top-0 md:w-36 lg:right-10 lg:top-[50%] md:top-1/3 lg:w-60 z-50" />
       </section>
 
       <section className="pt-16" id="services">

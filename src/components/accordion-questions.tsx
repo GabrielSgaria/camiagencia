@@ -7,7 +7,7 @@ export function AccordionQuestions() {
 
 
         <Accordion.Root
-            className="rounded-md w-11/12 lg:w-8/12  sm:mx-1 bg-[#09524C] text-neutral-100 shadow-2xl text-center"
+            className="rounded-md w-full sm:mx-1 bg-[#09524C] text-neutral-100 shadow-2xl text-center"
             type="single"
             collapsible
         >

@@ -145,7 +145,7 @@ export default function Home() {
         </div>
       </section>
       <section className="flex items-center justify-center h-[250px] sm:h-[400px] lg:h-[650px] lg:container lg:mx-auto mt-10" id="about">
-        <VideoPlayer src="https://media.graphassets.com/Gbe1sMPdSKiEm1NG8TSP"/>
+        <VideoPlayer src="https://media.graphassets.com/Gbe1sMPdSKiEm1NG8TSP" />
       </section>
 
       <section className="pt-16" id="services">
@@ -288,7 +288,7 @@ export default function Home() {
         </section>
         <section className="container mx-auto flex items-center justify-center">
           <div className="w-full items-center justify-center">
-          {isClient && (windowSize.width <= 768 ? <Image
+            {isClient && (windowSize.width <= 768 ? <Image
               width={900}
               height={900}
               src='/image/comparsion-mobile.png'
@@ -296,16 +296,16 @@ export default function Home() {
               className="w-full"
 
             /> :
-          
-          <Image
-              width={900}
-              height={900}
-              src='/image/comparsion.png'
-              alt="image comparsion"
-              className="w-full"
 
-            />)}
-            
+              <Image
+                width={900}
+                height={900}
+                src='/image/comparsion.png'
+                alt="image comparsion"
+                className="w-full"
+
+              />)}
+
           </div>
         </section>
       </motion.div>
@@ -352,7 +352,7 @@ export default function Home() {
                 Igor Bittencourt
               </h1>
               <p className="text-brancoCami/90 font-normal text-sm">
-                Especialista em Tráfego Pago e Empreendedor, Igor Bittencourt é sócio e responsável por aumentar o faturamento em 17x, 
+                Especialista em Tráfego Pago e Empreendedor, Igor Bittencourt é sócio e responsável por aumentar o faturamento em 17x,
                 de clientes dentro e fora do Brasil. Nas horas vagas designer e filmmaker.
               </p>
             </div>
@@ -366,16 +366,16 @@ export default function Home() {
                 Camilla Bittencourt
               </h1>
               <p className="text-brancoCami/90 font-normal text-sm">
-              Publicitária e Empreendedora desde sempre, Camilla Bittencourt é fundadora da agência criativa, responsável 
-              por gerenciar toda a equipe e manter o padrão de qualidade de todos os projetos realizados. Movida pelo propósito de trazer um marketing fácil e acessível, 
-              vem fazendo história com a primeira agência do Brasil especializada em criação de marca para profissionais da saúde.
+                Publicitária e Empreendedora desde sempre, Camilla Bittencourt é fundadora da agência criativa, responsável
+                por gerenciar toda a equipe e manter o padrão de qualidade de todos os projetos realizados. Movida pelo propósito de trazer um marketing fácil e acessível,
+                vem fazendo história com a primeira agência do Brasil especializada em criação de marca para profissionais da saúde.
               </p>
             </div>
           </div>
         </div>
       </section>
       <section className="py-10 bg-white">
-        <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center gap-10 sm:justify-between px-0 lg:h-[800px]"  id="questions">
+        <div className="container mx-auto flex flex-col lg:flex-row items-center justify-center gap-10 sm:justify-between px-0 lg:h-[800px]" id="questions">
           <div className="w-80 flex flex-col gap-5 sm:gap-10">
             <div className="text-pretoCami font-bold text-3xl sm:text-4xl text-center sm:text-start">
               <h1>Perguntas</h1>
@@ -389,7 +389,10 @@ export default function Home() {
               Falar no WhatsApp
             </button>
           </div>
-          <AccordionQuestions />
+          <div className="w-11/12 lg:w-8/12 h-4/6 justify-center ">
+
+            <AccordionQuestions />
+          </div>
         </div>
       </section>
 

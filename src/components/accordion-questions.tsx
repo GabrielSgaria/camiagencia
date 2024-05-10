@@ -21,7 +21,7 @@ export function AccordionQuestions() {
                         aria-hidden
                     />
                 </Accordion.Trigger>
-                <Accordion.Content className="AccordionContent py-4 px-3 saira text-xl text-neutral-100 bg-[#09524C]">
+                <Accordion.Content className="AccordionContent py-4 px-3 saira text-xl text-neutral-100 bg-[#09524C] text-justify">
                     <p>
                         Sim, nossas logos são 100% desenhadas a mão livre, do zero, baseadas em sua história,
                         personalidade e área de atuação.
@@ -41,7 +41,7 @@ export function AccordionQuestions() {
                         aria-hidden
                     />
                 </Accordion.Trigger>
-                <Accordion.Content className="AccordionContent py-4 px-3 saira text-xl text-neutral-100 bg-[#09524C]">
+                <Accordion.Content className="AccordionContent py-4 px-3 saira text-xl text-neutral-100 bg-[#09524C] text-justify">
                     <p>
                         A primeira prévia do projeto é enviada em até 15 dias úteis após a nossa reunião de alinhamentos
                         sendo aprovado enviamos seu projeto completo em até 7 dias úteis (caso tenha necessidade de
@@ -60,7 +60,7 @@ export function AccordionQuestions() {
                         aria-hidden
                     />
                 </Accordion.Trigger>
-                <Accordion.Content className="AccordionContent py-4 px-3 saira text-xl text-neutral-100 bg-[#09524C] rounded-md">
+                <Accordion.Content className="AccordionContent py-4 px-3 saira text-xl text-neutral-100 bg-[#09524C] rounded-md text-justify">
                     <p>
                         O pagamento é integral para início de projeto e pode ser realizado através de pix, boleto ou
                         parcelado no cartão de crédito. Mediante pagamento enviamos a nota fiscal e o contrato
@@ -79,7 +79,7 @@ export function AccordionQuestions() {
                         aria-hidden
                     />
                 </Accordion.Trigger>
-                <Accordion.Content className="AccordionContent py-4 px-3 saira text-xl text-neutral-100 bg-[#09524C] rounded-md">
+                <Accordion.Content className="AccordionContent py-4 px-3 saira text-xl text-neutral-100 bg-[#09524C] rounded-md text-justify">
                     <p>
                         Você recebe a logo em vetor, PNG, JPG e PDF. Os arquivos para impressão são enviados em
                         PDF próprio para impressão PDF/X-1A podendo ser impresso em qualquer gráfica da sua
@@ -100,7 +100,7 @@ export function AccordionQuestions() {
                         aria-hidden
                     />
                 </Accordion.Trigger>
-                <Accordion.Content className="AccordionContent py-4 px-3 saira text-xl text-neutral-100 bg-[#09524C]">
+                <Accordion.Content className="AccordionContent py-4 px-3 saira text-xl text-neutral-100 bg-[#09524C] text-justify">
                     <p>
                         Somos uma equipe criativa com mais de 10 integrantes, coordenada pela Camilla, sendo cada
                         etapa do processo realizada por um especialista. Então juntos, cada um em sua área de expertise
@@ -119,7 +119,7 @@ export function AccordionQuestions() {
                         aria-hidden
                     />
                 </Accordion.Trigger>
-                <Accordion.Content className="AccordionContent py-4 px-3 saira text-xl text-neutral-100 bg-[#09524C] rounded-md">
+                <Accordion.Content className="AccordionContent py-4 px-3 saira text-xl text-neutral-100 bg-[#09524C] rounded-md text-justify">
                     <p>
                         Após responder o formulário de início de projeto, temos nossa reunião de alinhamento. Vamos
                         apresentar visualmente todas as referências e sugestões dadas a você no formulário e vamos
@@ -138,7 +138,7 @@ export function AccordionQuestions() {
                         aria-hidden
                     />
                 </Accordion.Trigger>
-                <Accordion.Content className="AccordionContent py-4 px-3 saira text-xl text-neutral-100 bg-[#09524C] rounded-md">
+                <Accordion.Content className="AccordionContent py-4 px-3 saira text-xl text-neutral-100 bg-[#09524C] rounded-md text-justify">
                     <p>
                         Publicitária e Empreendedora desde sempre, Camilla Bittencourt é fundadora da agência criativa,
                         responsável por gerenciar toda a equipe e manter o padrão de qualidade de todos os projetos

@@ -146,6 +146,7 @@ export default function Home() {
 
       {isClient && (windowSize.width <= 768 ? <VideoMobile /> : <VideoDesktop />)}
 
+
       <section className="pt-16" id="services">
         <div className="container mx-auto flex flex-col text-brancoCami justify-center items-center gap-8" >
           <button
@@ -403,6 +404,6 @@ export default function Home() {
 
       <ButtonWhatsAppFixed />
       <Footer />
-    </div>
+    </div >
   );
 }

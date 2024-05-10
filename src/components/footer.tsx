@@ -1,10 +1,14 @@
 "use client";
+import behance from '../../public/image/behance.png'
 import {
     DesktopIcon,
     EnvelopeClosedIcon,
+    LinkedInLogoIcon,
 } from "@radix-ui/react-icons";
-import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import Link from "next/link";
+
+import { BehanceLogo } from '@phosphor-icons/react';
 
 export function Footer() {
     function sendMensage(numeroTelefone: number, mensagemPadrao: string) {
@@ -33,10 +37,10 @@ export function Footer() {
                         <a
                             onClick={() =>
                                 sendMensage(
-                                  554197514990,
-                                  "Olá! Vim através do site da Cami Agência Criativa."
+                                    554197514990,
+                                    "Olá! Vim através do site da Cami Agência Criativa."
                                 )
-                              }
+                            }
                             className="flex cursor-pointer items-center justify-center gap-4 text-neutral-800"
                         >
                             <FaWhatsapp className="size-6" />
@@ -51,7 +55,7 @@ export function Footer() {
                         >
                             <EnvelopeClosedIcon className="size-6" />
                             <p className="h-6 font-semibold transition-all duration-500 hover:border-b-[1px] hover:border-neutral-800">
-                            camilla@camiagencia.com.br
+                                camilla@camiagencia.com.br
                             </p>
                         </Link>
                     </div>
@@ -81,6 +85,36 @@ export function Footer() {
                             <FaInstagram className="size-6" />
                             <p className="h-6 font-semibold transition-all duration-500 hover:border-b-[1px] hover:border-neutral-800">
                                 @camiagencia
+                            </p>
+                        </Link>
+                        <Link
+                            target="blank"
+                            href="https://www.youtube.com/channel/UCofKtevZb4Mlw-cuzGicCpg"
+                            className="flex cursor-pointer flex-row items-center gap-4 text-neutral-800"
+                        >
+                            <FaYoutube className="size-6" />
+                            <p className="h-6 font-semibold transition-all duration-500 hover:border-b-[1px] hover:border-neutral-800">
+                                Cami | Agência criativa
+                            </p>
+                        </Link>
+                        <Link
+                            target="blank"
+                            href="https://www.behance.net/camiag"
+                            className="flex cursor-pointer flex-row items-center gap-4 text-neutral-800"
+                        >
+                            <BehanceLogo className='size-6' />
+                            <p className="h-6 font-semibold transition-all duration-500 hover:border-b-[1px] hover:border-neutral-800">
+                                Camiag
+                            </p>
+                        </Link>
+                        <Link
+                            target="blank"
+                            href="https://www.linkedin.com/company/cami-ag%C3%AAncia-critiva/"
+                            className="flex cursor-pointer flex-row items-center gap-4 text-neutral-800"
+                        >
+                            <LinkedInLogoIcon className='size-6' />
+                            <p className="h-6 font-semibold transition-all duration-500 hover:border-b-[1px] hover:border-neutral-800">
+                                Cami Agência Criativa
                             </p>
                         </Link>
                     </div>

@@ -102,7 +102,7 @@ export default function Home() {
               <span className="justify-center sm:justify-start flex w-full text-center sm:text-start">
                 Tenha uma identidade visual
                 exclusiva desenhada à mão
-                livre e que conte a sua história</span>
+                livre e que conte a sua história.</span>
             </h2>
           </div>
           <div className="relative w-full top-28 sm:top-48 lg:top-0 sm:right-0 flex justify-end items-center">
@@ -138,15 +138,14 @@ export default function Home() {
           />
           <div className="w-[250px] h-[120px] lg:h-[100px] lg:w-[700px] bg-marromCami absolute z-20 top-7 left-7 lg:top-12 lg:left-20 rounded-3xl">
             <p className="py-2 px-1 lg:px-5 lg:py-4 text-base lg:text-2xl font-bold text-zinc-200 text-center">
-              1º Agência do Brasil especialziada em criação de marca,
-              desenhada a mão livre, para profissionais da saúde!
+              1º Agência do Brasil especializada em criação de marca, desenhada a mão livre, para profissionais da saúde!
             </p>
           </div>
         </div>
       </section>
-      
-        {isClient && (windowSize.width <= 768 ? <VideoMobile /> : <VideoDesktop />)}
-      
+
+      {isClient && (windowSize.width <= 768 ? <VideoMobile /> : <VideoDesktop />)}
+
       <section className="pt-16" id="services">
         <div className="container mx-auto flex flex-col text-brancoCami justify-center items-center gap-8" >
           <button
@@ -161,7 +160,7 @@ export default function Home() {
           </button>
           <div className="flex flex-col gap-0 justify-center items-center my-4">
             <h1 className="font-bold text-marromCami sm:text-3xl text-base text-center">Criamos a sua marca através de um metódo compravado de 7 passos.</h1>
-            <h1 className="font-bold text-marromCami sm:text-3xl text-base text-center">Onde você participa de todo o processo.</h1>
+            <h1 className="font-bold text-marromCami sm:text-3xl text-base text-center">Onde você participa de todo o processo!</h1>
 
           </div>
 
@@ -208,7 +207,7 @@ export default function Home() {
                 7.Entrega
               </h1>
               <p className="font-bold text-azulCami text-base sm:text-lg">
-                Nosso maior objetivo é que ao final você amee se identifique com a sua marca. Ah! e é claro, use muitooooooooo!
+                Nosso maior objetivo é que ao final você ame e se identifique com a sua marca. Ah! e é claro, use muitooooooooo!
               </p>
             </div>
           </motion.div>
@@ -316,7 +315,7 @@ export default function Home() {
       <section className="bg-white pb-10">
         <div className="container mx-auto flex flex-col">
           <div className="items-center flex flex-col">
-            <h1 className="font-bold text-base sm:text-3xl text-pretoCami text-center sm:text-start" >A praticidade é o nosso lema.</h1>
+            <h1 className="font-bold text-base sm:text-3xl text-pretoCami text-center sm:text-start" >Logos com propósito é o nosso lema!</h1>
             <p className="font-normal text-base sm:text-2xl text-pretoCami text-center sm:text-start" >E não somos nós que estamos falando...</p>
           </div>
           <div className="columns-2  md:columns-4 mdgap-6 mt-10">
@@ -384,7 +383,14 @@ export default function Home() {
               Se tiver qualquer outra pergunta,
               por favor, entre em contato através do WhatsApp:
             </p>
-            <button className="shadow-xl rounded-2xl border-2 border-azulCami py-5 px-3 text-azulCami font-bold text-xl hover:bg-azulCami transition-all hover:text-brancoCami">
+            <button
+              onClick={() =>
+                sendMensage(
+                  554197514990,
+                  "Olá! Vim através do site da Cami Agência Criativa."
+                )
+              }
+              className="shadow-xl rounded-2xl border-2 border-azulCami py-5 px-3 text-azulCami font-bold text-xl hover:bg-azulCami transition-all hover:text-brancoCami">
               Falar no WhatsApp
             </button>
           </div>

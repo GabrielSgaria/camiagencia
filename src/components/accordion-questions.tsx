@@ -43,7 +43,7 @@ export function AccordionQuestions() {
                 </Accordion.Trigger>
                 <Accordion.Content className="AccordionContent py-4 px-3 saira text-xl text-neutral-100 bg-[#09524C] text-justify">
                     <p>
-                        A primeira prévia do projeto é enviada em até 15 dias úteis após a nossa reunião de alinhamentos
+                        A primeira prévia do projeto é enviada em até 15 dias úteis após a nossa reunião de alinhamento,
                         sendo aprovado enviamos seu projeto completo em até 7 dias úteis (caso tenha necessidade de
                         realizar alterações, são realizadas em até 10 dias úteis).
                     </p>

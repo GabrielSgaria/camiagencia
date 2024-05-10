@@ -13,14 +13,14 @@ export const texts = [
         srcIcon: icon1,
         altIcon: 'icon1',
         title: "1.Formulário:",
-        text: "É através dele que começamos a conhecer a sua história, com algumas perguntas sobre o que você gosta e sobre a sua área de atuação, reunimos algumas informações para conversamos na reunião.",
+        text: "É através dele que começamos a conhecer a sua história, com algumas perguntas sobre o que você gosta e sobre a sua área de atuação, reunimos algumas informações para conversarmos na reunião.",
     },
     {
 
         srcIcon: icon2,
         altIcon: 'icon2',
         title: "2.Reunião:",
-        text: "Nosso momento de nós conhecer e alinhar as expectativas da sua nova marca.",
+        text: "Na reunião vamos conversar sobre todos os itens do formulário, e alinhar as expectativas da sua nova marca.",
     },
     {
         srcIcon: icon3,

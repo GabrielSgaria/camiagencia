@@ -79,26 +79,6 @@ export function Footer() {
 
                         <Link
                             target="blank"
-                            href="https://www.instagram.com/camiagencia/"
-                            className="flex cursor-pointer flex-row items-center gap-4 text-neutral-800"
-                        >
-                            <FaInstagram className="size-6" />
-                            <p className="h-6 font-semibold transition-all duration-500 hover:border-b-[1px] hover:border-neutral-800">
-                                @camiagencia
-                            </p>
-                        </Link>
-                        <Link
-                            target="blank"
-                            href="https://www.youtube.com/channel/UCofKtevZb4Mlw-cuzGicCpg"
-                            className="flex cursor-pointer flex-row items-center gap-4 text-neutral-800"
-                        >
-                            <FaYoutube className="size-6" />
-                            <p className="h-6 font-semibold transition-all duration-500 hover:border-b-[1px] hover:border-neutral-800">
-                                Cami | Agência criativa
-                            </p>
-                        </Link>
-                        <Link
-                            target="blank"
                             href="https://www.behance.net/camiag"
                             className="flex cursor-pointer flex-row items-center gap-4 text-neutral-800"
                         >
@@ -109,12 +89,32 @@ export function Footer() {
                         </Link>
                         <Link
                             target="blank"
+                            href="https://www.instagram.com/camiagencia/"
+                            className="flex cursor-pointer flex-row items-center gap-4 text-neutral-800"
+                        >
+                            <FaInstagram className="size-6" />
+                            <p className="h-6 font-semibold transition-all duration-500 hover:border-b-[1px] hover:border-neutral-800">
+                                @camiagencia
+                            </p>
+                        </Link>
+                        <Link
+                            target="blank"
                             href="https://www.linkedin.com/company/cami-ag%C3%AAncia-critiva/"
                             className="flex cursor-pointer flex-row items-center gap-4 text-neutral-800"
                         >
                             <LinkedInLogoIcon className='size-6' />
                             <p className="h-6 font-semibold transition-all duration-500 hover:border-b-[1px] hover:border-neutral-800">
                                 Cami Agência Criativa
+                            </p>
+                        </Link>
+                        <Link
+                            target="blank"
+                            href="https://www.youtube.com/channel/UCofKtevZb4Mlw-cuzGicCpg"
+                            className="flex cursor-pointer flex-row items-center gap-4 text-neutral-800"
+                        >
+                            <FaYoutube className="size-6" />
+                            <p className="h-6 font-semibold transition-all duration-500 hover:border-b-[1px] hover:border-neutral-800">
+                                Cami | Agência criativa
                             </p>
                         </Link>
                     </div>

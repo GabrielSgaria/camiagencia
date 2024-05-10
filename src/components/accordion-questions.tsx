@@ -128,7 +128,7 @@ export function AccordionQuestions() {
                     </p>
                 </Accordion.Content>
             </Accordion.Item>
-            <Accordion.Item value="item-7">
+            {/* <Accordion.Item value="item-7">
                 <Accordion.Trigger className="AccordionTrigger  flex flex-row justify-between w-full items-center p-4 border-y rounded-md border-solid border-[#09524C]">
                     <span className="font-black text-lg sm:text-xl w-full text-start">
                         Sobre a Cami
@@ -146,7 +146,7 @@ export function AccordionQuestions() {
                         com a primeira agência do Brasil especializada em criação de marca para profissionais da saúde.
                     </p>
                 </Accordion.Content>
-            </Accordion.Item>
+            </Accordion.Item> */}
         </Accordion.Root>
 
     );

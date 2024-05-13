@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local"
 import "./globals.css";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const visby = localFont({
   src: [{
@@ -68,6 +69,7 @@ export default function RootLayout({
   return (
     <html lang="pt">
       <body className={visby.className}>{children}</body>
+      <GoogleAnalytics gaId="G-JXVQKJVV7C" />
     </html>
   );
 }

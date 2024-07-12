@@ -44,9 +44,11 @@ export function NavBar() {
 
                         <Link href="/" onClick={closeMenu}>
                             <Image
-                                width={400}
-                                height={400}
-                                src="/image/logo.png"
+                                width={900}
+                                height={900}
+                                quality={100}
+                                priority={true}
+                                src="/image/agencia-cami-2024.png"
                                 alt="Logo Principal"
                             />
                         </Link>

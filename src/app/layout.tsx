@@ -22,7 +22,7 @@ const visby = localFont({
 export const metadata: Metadata = {
   title: "Cami Agência Criativa",
   description: "Cami Agência Criativa | Identidade Visual",
-  metadataBase: new URL("https://camiagencia.vercel.app"),
+  metadataBase: new URL("https://www.camiagencia.com.br"),
   icons: '/favicon.png',
   openGraph: {
     title: "Cami Agência Criativa | Identidade Visual",
@@ -31,12 +31,12 @@ export const metadata: Metadata = {
     siteName: "Cami Agência Criativa",
     images: [
       {
-        url: "https://opengraph.b-cdn.net/production/documents/6546cd94-9b6f-4376-9988-89d3d74bc121.png?token=asggRx_vQ1k5WIrQ92CM-hK1FCbk6aYkHanoODyh7CM&height=283&width=313&expires=33249191208",
+        url: "https://sa-east-1.graphassets.com/clwqdkiy400yu07ls56ql92po/clyiqh1k70iui07lu0jqowpmf",
         width: 800,
         height: 600,
       },
       {
-        url: "https://opengraph.b-cdn.net/production/documents/6546cd94-9b6f-4376-9988-89d3d74bc121.png?token=asggRx_vQ1k5WIrQ92CM-hK1FCbk6aYkHanoODyh7CM&height=283&width=313&expires=33249191208",
+        url: "https://sa-east-1.graphassets.com/clwqdkiy400yu07ls56ql92po/clyiqh1ku0iun07lup6mm8x08",
         width: 1800,
         height: 1600,
       },

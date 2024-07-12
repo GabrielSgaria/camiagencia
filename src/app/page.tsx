@@ -108,9 +108,11 @@ export default function Home() {
           <div className="relative w-full top-28 sm:top-48 lg:top-0 sm:right-0 flex justify-end items-center">
             <div className="absolute">
               <Image
-                width={900}
-                height={900}
+                width={9000}
+                height={9000}
                 alt="Logo Cami Agência Criativa"
+                quality={100}
+                priority={true}
                 src={logoECami}
               />
               <div className="absolute -bottom-6 sm:left-1/2 transform -translate-y-[20px] sm:-translate-y-0 sm:-translate-x-1/2 bg-zinc-50/90 shadow-md px-2 py-2 sm:px-4 sm:py-2 rounded-3xl flex flex-col items-start justify-center ">
@@ -288,8 +290,10 @@ export default function Home() {
         <section className="container mx-auto flex items-center justify-center">
           <div className="w-full items-center justify-center">
             {isClient && (windowSize.width <= 768 ? <Image
-              width={900}
-              height={900}
+              width={400}
+              height={500}
+              quality={100}
+              priority={true}
               src='/image/comparsion-mobile.png'
               alt="image comparsion mobile"
               className="w-full"
@@ -297,8 +301,10 @@ export default function Home() {
             /> :
 
               <Image
-                width={900}
-                height={900}
+                width={1700}
+                height={600}
+                quality={100}
+                priority={true}
                 src='/image/comparsion.png'
                 alt="image comparsion"
                 className="w-full"
@@ -310,7 +316,8 @@ export default function Home() {
       </motion.div>
       <section className="py-24 bg-white">
         <div className="container mx-auto flex justify-center ">
-          <Image width={900} height={900} src='/image/prancheta1.png' alt="Foto" className="shadow-2xl rounded-b-[40px]" />
+          <Image width={900} height={900}  quality={100}
+                priority={true} src='/image/prancheta1.png' alt="Foto" className="shadow-2xl rounded-b-[40px]" />
         </div>
       </section>
       <section className="bg-white pb-10">
@@ -344,7 +351,8 @@ export default function Home() {
         <div className="flex lg:flex-row flex-col gap-2 lg:justify-around items-center justify-center mt-10 sm:mt-0">
           <div className="h-[458px] lg:w-[650px] lg:h-[250px] flex items-center sm:mt-10 relative shadow-2xl">
             <div className="max-w-[253px] h-full">
-              <Image width={900} height={900} src='/image/prancheta4.png' alt="Image Igor" className="sm:rounded-l-2xl overflow-hidden" />
+              <Image width={900} height={900}  quality={100}
+                priority={true} src='/image/prancheta4.png' alt="Image Igor" className="sm:rounded-l-2xl overflow-hidden" />
             </div>
             <div className="bg-pretoCami/85 lg:w-[397px] lg:h-[203.5px] p-5 lg:px-5 lg:pt-2 absolute sm:right-0 bottom-0 rounded-br-2xl">
               <h1 className="text-brancoCami font-bold text-xl">
@@ -358,7 +366,8 @@ export default function Home() {
           </div>
           <div className="h-[598px] lg:w-[650px] lg:h-[250px] flex items-center sm:mt-10 relative shadow-2xl">
             <div className="max-w-[253px] h-full">
-              <Image width={900} height={900} src='/image/prancheta5.png' alt="Image Igor" className="sm:rounded-l-2xl overflow-hidden" />
+              <Image width={900} height={900}  quality={100}
+                priority={true} src='/image/prancheta5.png' alt="Image Igor" className="sm:rounded-l-2xl overflow-hidden" />
             </div>
             <div className="bg-pretoCami/85 lg:w-[397px] lg:h-[203.5px] p-5 lg:px-5 lg:pt-2 absolute right-0 bottom-0 rounded-br-2xl">
               <h1 className="text-brancoCami font-bold text-xl">
